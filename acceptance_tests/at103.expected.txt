@@ -1,0 +1,335 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} + nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({(? / nil)} + nil)
+  Report: OK.
+->multiply
+  Expression currently specified: ({((? * nil) / nil)} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({?} * nil) / nil)} + nil)
+  Report: OK.
+->subtract
+  Expression currently specified: ({(({(? - nil)} * nil) / nil)} + nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - ?)} * nil) / nil)} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - ?)} * nil) / nil)} + nil)
+  Report: Error (Set enumeration is not being specified).
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), ?} * nil) / nil)} + nil)
+  Report: OK.
+->integer_constant(-4)
+  Expression currently specified: ({(({(True - 3), -4, ?} * nil) / nil)} + nil)
+  Report: OK.
+->negation
+  Expression currently specified: ({(({(True - 3), -4, (! ?)} * nil) / nil)} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), ?} * nil) / nil)} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False, ?} * nil) / nil)} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * ?) / nil)} + nil)
+  Report: OK.
+->negative
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- ?)) / nil)} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / ?)} + nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), ?} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {?}} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{?}}} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{?}}}} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{?}}}}} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{?}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(? + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{((? + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((? + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{((((? + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((? + nil) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{((((((? + nil) + nil) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((? + nil) + nil) + nil) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + ?) + nil) + nil) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + ?) + nil) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + ?) + nil) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + ?) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + ?) + nil) + nil) + nil)}}}}}} + nil)
+  Report: Error (Set enumeration is not being specified).
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {?}) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {?}) + nil) + nil) + nil)}}}}}} + nil)
+  Report: Error: (Set enumeration must be non-empty).
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1, ?}) + nil) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + ?) + nil) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + ?) + nil)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + ?)}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, ?}}}}}} + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0, ?}}}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, ?}}}}} + nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True, ?}}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ?}}}} + nil)
+  Report: OK.
+->imply
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, (? => nil)}}}} + nil)
+  Report: OK.
+->equals
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((? = nil) => nil)}}}} + nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, (((? < nil) = nil) => nil)}}}} + nil)
+  Report: OK.
+->greater_than
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((? > nil) < nil) = nil) => nil)}}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > ?) < nil) = nil) => nil)}}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < ?) = nil) => nil)}}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = ?) => nil)}}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => ?)}}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3), ?}}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, ?}}} + nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (? + nil)}}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + ?)}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + ?)}}} + nil)
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + ?)}}} + nil)
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + ?)}}} + nil)
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3), ?}}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, ?}} + nil)
+  Report: OK.
+->for_all
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& ?)}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& ?)}} + nil)
+  Report: Error (Set enumeration is not being specified).
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), ?}} + nil)
+  Report: OK.
+->there_exists
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| ?)}} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {?})}} + nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3, ?})}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), ?}} + nil)
+  Report: OK.
+->conjoin
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (? && nil)}} + nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && ?)}} + nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), ?}} + nil)
+  Report: OK.
+->disjoin
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (? || nil)}} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || ?)}} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False), ?}} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ?} + nil)
+  Report: OK.
+->difference
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, (? \ nil)} + nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({?} \ nil)} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False, ?} \ nil)} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ ?)} + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False), ?} + nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ?)
+  Report: OK.
+->union
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + (? \/ nil))
+  Report: OK.
+->intersect
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((? /\ nil) \/ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ ?) \/ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ ?))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->boolean_constant(True)
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->open_set_enumeration
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->divide
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->multiply
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->add
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->subtract
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->difference
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->imply
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->conjoin
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->disjoin
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->for_all
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->there_exists
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is already fully specified).
+->evaluate
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3))
+  Report: ({(({(True - 3), -4, (! False), False} * (- 0)) / True), {{{{{(((((((1 + 1) + 1) + 1) + {1}) + 1) + 1) + 1), 1, -1, 0, 0, 0, 0, 0, 0}, True}, ((((3 > 3) < 3) = 3) => 3)}, (3 + 3)}, (&& 3), (|| {3}), (True && True), (False || False)}, ({False} \ False)} + ((False /\ 3) \/ 3)) is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).

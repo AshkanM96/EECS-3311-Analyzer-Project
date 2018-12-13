@@ -1,0 +1,14 @@
+equals
+open_set_enumeration
+add
+integer_constant (2)
+integer_constant (3)
+integer_constant (7)
+close_set_enumeration
+open_set_enumeration
+integer_constant (5)
+integer_constant (7)
+close_set_enumeration
+evaluate
+type_check
+open_set_enumeration

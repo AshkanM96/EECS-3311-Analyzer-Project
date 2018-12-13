@@ -1,0 +1,122 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->imply
+  Expression currently specified: (? => nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ((? < nil) => nil)
+  Report: OK.
+->add
+  Expression currently specified: (((? + nil) < nil) => nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (((2 + ?) < nil) => nil)
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: (((2 + -1) < ?) => nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (((2 + -1) < 1) => ?)
+  Report: OK.
+->conjoin
+  Expression currently specified: (((2 + -1) < 1) => (? && nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((2 + -1) < 1) => (False && ?))
+  Report: OK.
+->equals
+  Expression currently specified: (((2 + -1) < 1) => (False && (? = nil)))
+  Report: OK.
+->evaluate
+  Expression currently specified: (((2 + -1) < 1) => (False && (? = nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (((2 + -1) < 1) => (False && (? = nil)))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(5)
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = ?)))
+  Report: OK.
+->negative
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- ?))))
+  Report: OK.
+->negative
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- ?)))))
+  Report: OK.
+->negative
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- ?))))))
+  Report: OK.
+->negative
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- (- ?)))))))
+  Report: OK.
+->negative
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- (- (- ?))))))))
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- (- (- -5))))))))
+  Report: OK.
+->type_check
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- (- (- -5))))))))
+  Report: (((2 + -1) < 1) => (False && (5 = (- (- (- (- (- -5)))))))) is type-correct.
+->evaluate
+  Expression currently specified: (((2 + -1) < 1) => (False && (5 = (- (- (- (- (- -5))))))))
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->evaluate
+  Expression currently specified: ?
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->type_check
+  Expression currently specified: ?
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->integer_constant(1)
+  Expression currently specified: 1
+  Report: OK.
+->evaluate
+  Expression currently specified: 1
+  Report: 1
+->type_check
+  Expression currently specified: 1
+  Report: 1 is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: 1
+  Report: OK.
+->add
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->imply
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->less_than
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->conjoin
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->equals
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->evaluate
+  Expression currently specified: 1
+  Report: 1
+->negative
+  Expression currently specified: 1
+  Report: Error (Expression is already fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.

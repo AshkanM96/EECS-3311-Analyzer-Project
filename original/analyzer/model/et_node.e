@@ -106,6 +106,13 @@ feature -- Expression Type Queries
 
 feature -- Expression State Queries
 
+	is_new: BOOLEAN
+		do
+			Result := node.is_new
+		ensure
+			correct_result: Result = node.is_new
+		end
+
 	is_open: BOOLEAN
 		do
 			Result := node.is_open
@@ -125,7 +132,7 @@ feature {EXPRESSION_TREE} -- Expression Adding
 	add (e: EXPRESSION)
 		require
 			valid_argument: (e /= Void) and then (not e.is_null)
-			valid_current: is_open and then (not is_const)
+			open: is_open
 		do
 			node.add (e)
 		end

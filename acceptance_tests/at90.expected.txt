@@ -1,0 +1,47 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {3, ?}
+  Report: OK.
+->add
+  Expression currently specified: {3, (? + nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {3, (1 + ?)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {3, (1 + 2), ?}
+  Report: OK.
+->sum
+  Expression currently specified: {3, (1 + 2), (+ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {3, (1 + 2), (+ {?})}
+  Report: OK.
+->negative
+  Expression currently specified: {3, (1 + 2), (+ {(- ?)})}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), ?})}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, ?})}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, 4, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, 4}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, 4})}
+  Report: OK.
+->type_check
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, 4})}
+  Report: {3, (1 + 2), (+ {(- 2), 1, 4})} is type-correct.
+->evaluate
+  Expression currently specified: {3, (1 + 2), (+ {(- 2), 1, 4})}
+  Report: {3}

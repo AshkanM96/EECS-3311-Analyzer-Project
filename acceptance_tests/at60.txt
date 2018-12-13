@@ -1,0 +1,11 @@
+divide
+integer_constant(10)
+integer_constant(-10)
+type_check
+evaluate
+reset
+divide
+integer_constant(10)
+integer_constant(-3)
+type_check
+evaluate

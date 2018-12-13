@@ -1,0 +1,317 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{?}}
+  Report: Error: (Set enumeration must be non-empty).
+->open_set_enumeration
+  Expression currently specified: {{{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{?}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{?}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{?}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{?}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{?}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{?}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{?}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{?}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{?}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{?}}}}}}}}}}}}
+  Report: Error: (Set enumeration must be non-empty).
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{?}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{?}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: Error: (Set enumeration must be non-empty).
+->integer_constant(2)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, ?}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, ?}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->integer_constant(50)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50, ?}}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}, ?}}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}, ?}}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}, ?}}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}, ?}}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}, ?}}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}, ?}}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}, ?}}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}, ?}}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}, ?}}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}, ?}}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}, ?}}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}, ?}}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}, ?}}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}, ?}}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}, ?}}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}, ?}}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}, ?}}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, ?}}}}}}}
+  Report: OK.
+->add
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (? + nil)}}}}}}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + ?)}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + ?)}}}}}}}
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + ?)}}}}}}}
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + ?)}}}}}}}
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(-3)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3), ?}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}, ?}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}, ?}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->integer_constant(4)
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->add
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->divide
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->multiply
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->union
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->intersect
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->for_all
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->there_exists
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->close_set_enumeration
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is already fully specified).
+->evaluate
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}}
+  Report: {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{2}, 3}}}}}}}}}}}}}}, 4, 50}}}}}}}}}}}}}}}}}}, (3 + -3)}}}}}}} is not type-correct.

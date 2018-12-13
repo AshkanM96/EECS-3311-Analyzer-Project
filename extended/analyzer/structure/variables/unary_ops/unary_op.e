@@ -34,6 +34,7 @@ feature -- Constructor
 		do
 			child := cea.null_cur
 		ensure then
+			new: is_new
 			correct_child: child = cea.null_cur
 		end
 
@@ -51,6 +52,13 @@ feature -- Type Queries
 	frozen is_unary_op: BOOLEAN = True
 
 feature -- State Queries
+
+	frozen is_new: BOOLEAN
+		do
+			Result := (child = cea.null_cur)
+		ensure then
+			correct_result: Result = (child = cea.null_cur)
+		end
 
 	frozen is_open: BOOLEAN
 		do
@@ -117,8 +125,8 @@ feature -- Duplication
 			Result := twin
 			Result.set_child (child.deep_dual)
 		ensure then
-			result_child_not_same_as_current_child: Result.child /= child
 			result_child_equal_to_current_child: Result.child ~ child
+			result_child_diff_from_current_child: same_obj_diff_ptr (child, Result.child)
 		end
 
 invariant

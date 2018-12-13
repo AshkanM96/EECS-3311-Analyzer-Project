@@ -1,0 +1,56 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->type_check
+  Expression currently specified: {?}
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: {?}
+  Report: Error (Expression is not yet fully specified).
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->type_check
+  Expression currently specified: {{True, ?}}
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: {{True, ?}}
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: {{True, ?}}
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: {{True, False, ?}}
+  Report: OK.
+->type_check
+  Expression currently specified: {{True, False, ?}}
+  Report: Error (Expression is not yet fully specified).
+->close_set_enumeration
+  Expression currently specified: {{True, False}, ?}
+  Report: OK.
+->type_check
+  Expression currently specified: {{True, False}, ?}
+  Report: Error (Expression is not yet fully specified).
+->open_set_enumeration
+  Expression currently specified: {{True, False}, {?}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{True, False}, {1, ?}}
+  Report: OK.
+->type_check
+  Expression currently specified: {{True, False}, {1, ?}}
+  Report: Error (Expression is not yet fully specified).
+->close_set_enumeration
+  Expression currently specified: {{True, False}, {1}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, False}, {1}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True, False}, {1}}
+  Report: Error (Expression is not type-correct).

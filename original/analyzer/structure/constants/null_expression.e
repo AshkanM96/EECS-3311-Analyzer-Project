@@ -9,8 +9,7 @@ inherit
 
 	CONSTANT_EXPRESSION
 		redefine
-			is_null,
-			is_open
+			is_null
 		end
 
 create {CONST_EXPR_ACCESS}
@@ -35,10 +34,6 @@ feature {NONE} -- Constructors
 feature -- Type Queries
 
 	is_null: BOOLEAN = True
-
-feature -- State Queries
-
-	is_open: BOOLEAN = True
 
 feature -- Visitor Pattern
 

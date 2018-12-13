@@ -1,0 +1,59 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (1 && ?)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (1 && 5)
+  Report: OK.
+->type_check
+  Expression currently specified: (1 && 5)
+  Report: (1 && 5) is not type-correct.
+->evaluate
+  Expression currently specified: (1 && 5)
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True && ?)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True && True)
+  Report: OK.
+->type_check
+  Expression currently specified: (True && True)
+  Report: (True && True) is type-correct.
+->evaluate
+  Expression currently specified: (True && True)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True && ?)
+  Report: OK.
+->disjoin
+  Expression currently specified: (True && (? || nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True && (True || ?))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (True && (True || False))
+  Report: OK.
+->type_check
+  Expression currently specified: (True && (True || False))
+  Report: (True && (True || False)) is type-correct.
+->evaluate
+  Expression currently specified: (True && (True || False))
+  Report: True

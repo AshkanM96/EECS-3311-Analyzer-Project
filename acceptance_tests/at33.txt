@@ -1,0 +1,15 @@
+open_set_enumeration
+integer_constant(2)
+integer_constant(2)
+integer_constant(2)
+close_set_enumeration
+type_check
+evaluate
+reset
+open_set_enumeration
+integer_constant(2)
+integer_constant(2)
+integer_constant(3)
+close_set_enumeration
+type_check
+evaluate

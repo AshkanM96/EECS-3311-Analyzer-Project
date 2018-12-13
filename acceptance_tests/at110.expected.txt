@@ -1,0 +1,134 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, ?}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{2, 3, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{2, 3, (? + nil)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{2, 3, (1 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{2, 3, (1 + 1), ?}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{2, 3, (1 + 1), 4, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- ?)}}
+  Report: OK.
+->negative
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- ?))}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), ?}}
+  Report: OK.
+->multiply
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (? * nil)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2)}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2)}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2)}}
+  Report: {{2, 3, 4}}
+->type_check
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2)}}
+  Report: {{2, 3, (1 + 1), 4}, {2, (- (- 3)), (2 * 2)}} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, ?}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{2, 3, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{2, 3, (? + nil)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{2, 3, (1 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{2, 3, (1 + 1), ?}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{2, 3, (1 + 1), 4, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {?}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- ?)}}
+  Report: OK.
+->negative
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- ?))}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), ?}}
+  Report: OK.
+->multiply
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (? * nil)}}
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * ?)}}
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1)}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1)}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1)}}
+  Report: {{2, 3, 4}}
+->type_check
+  Expression currently specified: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1)}}
+  Report: {{2, 3, (1 + 1), 4}, {4, (- (- 2)), (-3 * -1)}} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

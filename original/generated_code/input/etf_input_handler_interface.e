@@ -237,22 +237,22 @@ feature -- Parsing
 					--				if args.is_empty then
 					--					create {ETF_DIFFERENCE} Result.make ("difference", [], abstract_ui)
 					--				end
-			elseif (cmd_name ~ "subset_equal") then
+			elseif ((cmd_name ~ "subset_equal") or else (cmd_name ~ "subeq")) then
 				create {ETF_SUBSET_EQUAL} Result.make ("subset_equal", [], abstract_ui)
 					--				if args.is_empty then
 					--					create {ETF_SUBSET_EQUAL} Result.make ("subset_equal", [], abstract_ui)
 					--				end
-			elseif (cmd_name ~ "subset_proper") then
+			elseif ((cmd_name ~ "subset_proper") or else (cmd_name ~ "subneq")) then
 				create {ETF_SUBSET_PROPER} Result.make ("subset_proper", [], abstract_ui)
 					--				if args.is_empty then
 					--					create {ETF_SUBSET_PROPER} Result.make ("subset_proper", [], abstract_ui)
 					--				end
-			elseif (cmd_name ~ "superset_equal") then
+			elseif ((cmd_name ~ "superset_equal") or else (cmd_name ~ "supeq")) then
 				create {ETF_SUPERSET_EQUAL} Result.make ("superset_equal", [], abstract_ui)
 					--				if args.is_empty then
 					--					create {ETF_SUPERSET_EQUAL} Result.make ("superset_equal", [], abstract_ui)
 					--				end
-			elseif (cmd_name ~ "superset_proper") then
+			elseif ((cmd_name ~ "superset_proper") or else (cmd_name ~ "supneq")) then
 				create {ETF_SUPERSET_PROPER} Result.make ("superset_proper", [], abstract_ui)
 					--				if args.is_empty then
 					--					create {ETF_SUPERSET_PROPER} Result.make ("superset_proper", [], abstract_ui)
@@ -504,28 +504,28 @@ feature -- Parsing
 						--						end
 						--						Result.append (evt_out_str + " does not conform to declaration difference")
 						--					end
-				elseif (cmd_name ~ "subset_equal") then
+				elseif ((cmd_name ~ "subset_equal") or else (cmd_name ~ "subeq")) then
 						--					if (NOT args.is_empty) then
 						--						if (NOT Result.is_empty) then
 						--							Result.append ("%N")
 						--						end
 						--						Result.append (evt_out_str + " does not conform to declaration subset_equal")
 						--					end
-				elseif (cmd_name ~ "subset_proper") then
+				elseif ((cmd_name ~ "subset_proper") or else (cmd_name ~ "subneq")) then
 						--					if (NOT args.is_empty) then
 						--						if (NOT Result.is_empty) then
 						--							Result.append ("%N")
 						--						end
 						--						Result.append (evt_out_str + " does not conform to declaration subset_proper")
 						--					end
-				elseif (cmd_name ~ "superset_equal") then
+				elseif ((cmd_name ~ "superset_equal") or else (cmd_name ~ "supeq")) then
 						--					if (NOT args.is_empty) then
 						--						if (NOT Result.is_empty) then
 						--							Result.append ("%N")
 						--						end
 						--						Result.append (evt_out_str + " does not conform to declaration superset_equal")
 						--					end
-				elseif (cmd_name ~ "superset_proper") then
+				elseif ((cmd_name ~ "superset_proper") or else (cmd_name ~ "supneq")) then
 						--					if (NOT args.is_empty) then
 						--						if (NOT Result.is_empty) then
 						--							Result.append ("%N")

@@ -1,0 +1,47 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->disjoin
+  Expression currently specified: (? || nil)
+  Report: OK.
+->equals
+  Expression currently specified: ((? = nil) || nil)
+  Report: OK.
+->sum
+  Expression currently specified: (((+ ?) = nil) || nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (((+ {?}) = nil) || nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (((+ {2, ?}) = nil) || nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (((+ {2, 3, ?}) = nil) || nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (((+ {2, 3, -5, ?}) = nil) || nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (((+ {2, 3, -5, 0, ?}) = nil) || nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (((+ {2, 3, -5, 0}) = ?) || nil)
+  Report: OK.
+->negative
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- ?)) || nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- 0)) || ?)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- 0)) || False)
+  Report: OK.
+->evaluate
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- 0)) || False)
+  Report: True
+->type_check
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- 0)) || False)
+  Report: (((+ {2, 3, -5, 0}) = (- 0)) || False) is type-correct.
+->evaluate
+  Expression currently specified: (((+ {2, 3, -5, 0}) = (- 0)) || False)
+  Report: True

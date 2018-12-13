@@ -1,0 +1,44 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} = nil)
+  Report: OK.
+->add
+  Expression currently specified: ({(? + nil)} = nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({(2 + ?)} = nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({(2 + 3), ?} = nil)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: ({(2 + 3), 7, ?} = nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(2 + 3), 7} = ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({(2 + 3), 7} = {?})
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: ({(2 + 3), 7} = {5, ?})
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: ({(2 + 3), 7} = {5, 7, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({(2 + 3), 7} = {5, 7})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({(2 + 3), 7} = {5, 7})
+  Report: True
+->type_check
+  Expression currently specified: ({(2 + 3), 7} = {5, 7})
+  Report: ({(2 + 3), 7} = {5, 7}) is type-correct.
+->open_set_enumeration
+  Expression currently specified: ({(2 + 3), 7} = {5, 7})
+  Report: Error (Expression is already fully specified).

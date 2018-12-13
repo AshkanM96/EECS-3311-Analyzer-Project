@@ -1,0 +1,29 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, ?}
+  Report: OK.
+->divide
+  Expression currently specified: {{2}, (? / nil)}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{2}, (4 / ?)}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{2}, (4 / 3), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, (4 / 3)}
+  Report: OK.
+->type_check
+  Expression currently specified: {{2}, (4 / 3)}
+  Report: {{2}, (4 / 3)} is not type-correct.

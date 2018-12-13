@@ -1,0 +1,47 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->difference
+  Expression currently specified: (? \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} \ nil)
+  Report: OK.
+->integer_constant(13)
+  Expression currently specified: ({13, ?} \ nil)
+  Report: OK.
+->integer_constant(16)
+  Expression currently specified: ({13, 16, ?} \ nil)
+  Report: OK.
+->integer_constant(22)
+  Expression currently specified: ({13, 16, 22, ?} \ nil)
+  Report: OK.
+->integer_constant(44)
+  Expression currently specified: ({13, 16, 22, 44, ?} \ nil)
+  Report: OK.
+->integer_constant(88)
+  Expression currently specified: ({13, 16, 22, 44, 88, ?} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({13, 16, 22, 44, 88} \ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {?})
+  Report: OK.
+->integer_constant(44)
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, ?})
+  Report: OK.
+->integer_constant(88)
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, 88, ?})
+  Report: OK.
+->integer_constant(90)
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, 88, 90, ?})
+  Report: OK.
+->integer_constant(100)
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, 88, 90, 100, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, 88, 90, 100})
+  Report: OK.
+->type_check
+  Expression currently specified: ({13, 16, 22, 44, 88} \ {44, 88, 90, 100})
+  Report: ({13, 16, 22, 44, 88} \ {44, 88, 90, 100}) is type-correct.

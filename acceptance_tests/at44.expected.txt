@@ -1,0 +1,107 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->difference
+  Expression currently specified: (? \ nil)
+  Report: OK.
+->union
+  Expression currently specified: ((? \/ nil) \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (({?} \/ nil) \ nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, ?} \/ nil) \ nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (({False, True, ?} \/ nil) \ nil)
+  Report: OK.
+->conjoin
+  Expression currently specified: (({False, True, (? && nil)} \/ nil) \ nil)
+  Report: OK.
+->equals
+  Expression currently specified: (({False, True, ((? = nil) && nil)} \/ nil) \ nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (({False, True, ((2 = ?) && nil)} \/ nil) \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (({False, True, ((2 = 3) && ?)} \/ nil) \ nil)
+  Report: OK.
+->greater_than
+  Expression currently specified: (({False, True, ((2 = 3) && (? > nil))} \/ nil) \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > ?))} \/ nil) \ nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2)), ?} \/ nil) \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ ?) \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {?}) \ nil)
+  Report: OK.
+->greater_than
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {(? > nil)}) \ nil)
+  Report: OK.
+->negative
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- ?) > nil)}) \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > ?)}) \ nil)
+  Report: OK.
+->integer_constant(-1000000)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000), ?}) \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, ?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {True}))
+  Report: {False}
+->type_check
+  Expression currently specified: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {True}))
+  Report: (({False, True, ((2 = 3) && (3 > 2))} \/ {((- 3) > -1000000)}) \ ({False, False, False, False, True, False, False, False} /\ {True})) is type-correct.

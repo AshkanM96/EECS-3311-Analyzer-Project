@@ -30,10 +30,9 @@ feature -- Type Queries
 
 feature -- State Queries
 
-	is_open: BOOLEAN
-		do
-			Result := False
-		end
+	frozen is_new: BOOLEAN = True
+
+	frozen is_open: BOOLEAN = False
 
 	frozen is_open_rec: BOOLEAN
 		do

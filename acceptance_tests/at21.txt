@@ -1,0 +1,11 @@
+sum
+open_set_enumeration
+add
+integer_constant(1)
+integer_constant(2)
+integer_constant(3)
+divide
+integer_constant(6)
+integer_constant(2)
+close_set_enumeration
+evaluate

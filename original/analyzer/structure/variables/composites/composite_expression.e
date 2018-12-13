@@ -128,6 +128,7 @@ feature -- Constructor
 				-- set duplicate flag
 			may_have_duplicate := False
 		ensure then
+			new: is_new
 			open: is_open
 			empty: children.is_empty
 			has_no_duplicates: not may_have_duplicate
@@ -140,6 +141,15 @@ feature -- Reset
 		ensure then
 			empty: children.is_empty
 			has_no_duplicates: not may_have_duplicate
+		end
+
+feature -- State Queries
+
+	frozen is_new: BOOLEAN
+		do
+			Result := children.is_empty
+		ensure then
+			correct_result: Result = children.is_empty
 		end
 
 feature -- Adding
@@ -206,10 +216,11 @@ feature -- Duplication
 			result_may_have_duplicate_same_as_current_may_have_duplicate: Result.may_have_duplicate = may_have_duplicate
 			result_children_not_same_as_current_children: Result.children /= children
 			result_children_equal_to_current_children: Result.children ~ children
-			result_children_elements_not_same_as_current_children_elements: across children.lower |..| children.count as i all (Result.children [i.item] /= children [i.item]) end
+			result_children_elements_diff_from_current_children_elements: across children.lower |..| children.count as i all (same_obj_diff_ptr (children [i.item], Result.children [i.item])) end
 		end
 
 invariant
 	children_object_comparison: children.object_comparison
+	all_not_null: across children as cursor all (not cursor.item.is_null) end
 
 end

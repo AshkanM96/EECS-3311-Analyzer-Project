@@ -1,0 +1,587 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {{True}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(? / nil)} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 / ?)} \ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 / 0)} \ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 / 0)} \ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->union
+  Expression currently specified: {{True}, (? \/ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \/ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(? / nil)} \/ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 / ?)} \/ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0), ?} \/ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \/ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 / 0)} \/ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->intersect
+  Expression currently specified: {{True}, (? /\ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} /\ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(? / nil)} /\ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 / ?)} /\ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0), ?} /\ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} /\ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10)})}
+  Report: Error (Divisor is zero and Modulus is not positive).
+->type_check
+  Expression currently specified: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 / 0)} /\ {((3 / 0) mod -10)})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->union
+  Expression currently specified: {{True}, (? \/ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \/ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} \/ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((? / nil) mod nil)} \/ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({((2 / ?) mod nil)} \/ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod ?)} \/ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7), ?} \/ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: {{True}, ({((2 / 0) mod -7)} \/ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {{True}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} \ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((? / nil) mod nil)} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({((2 / ?) mod nil)} \ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod ?)} \ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10)})}
+  Report: Error (Divisor is zero and Modulus is not positive).
+->type_check
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10)})}
+  Report: {{True}, ({((2 / 0) mod -7)} \ {((3 / 0) mod -10)})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->intersect
+  Expression currently specified: {{True}, (? /\ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} /\ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} /\ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((? / nil) mod nil)} /\ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({((2 / ?) mod nil)} /\ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod ?)} /\ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7), ?} /\ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: {{True}, ({((2 / 0) mod -7)} /\ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->union
+  Expression currently specified: {{True}, (? \/ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \/ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} \/ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 mod ?)} \/ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({(2 mod -7), ?} \/ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 mod -7)} \/ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->intersect
+  Expression currently specified: {{True}, (? /\ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} /\ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} /\ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 mod ?)} /\ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({(2 mod -7), ?} /\ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: Error (Divisor is zero and Modulus is not positive).
+->type_check
+  Expression currently specified: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 mod -7)} /\ {((3 / 0) mod -10)})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {{True}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({?} \ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(? mod nil)} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{True}, ({(2 mod ?)} \ nil)}
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: {{True}, ({(2 mod -7), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {(? mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((? / nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / ?) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod ?)})}
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10)})}
+  Report: {{True}, ({(2 mod -7)} \ {((3 / 0) mod -10)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

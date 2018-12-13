@@ -1,0 +1,10 @@
+multiply
+integer_constant(5)
+sum
+open_set_enumeration
+integer_constant(2)
+integer_constant(2)
+integer_constant(3)
+close_set_enumeration
+type_check
+evaluate

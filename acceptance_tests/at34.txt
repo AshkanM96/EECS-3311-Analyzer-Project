@@ -1,0 +1,16 @@
+sum
+open_set_enumeration
+type_check
+integer_constant(1)
+integer_constant(1)
+integer_constant(1)
+integer_constant(1)
+integer_constant(1)
+integer_constant(5)
+type_check
+add
+integer_constant(1)
+integer_constant(1)
+close_set_enumeration
+type_check
+evaluate

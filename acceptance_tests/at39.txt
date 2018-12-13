@@ -1,0 +1,16 @@
+multiply
+integer_constant(0)
+integer_constant(5)
+type_check
+evaluate
+reset
+multiply
+integer_constant(-5)
+integer_constant(5)
+type_check
+evaluate
+reset
+multiply
+integer_constant(0)
+type_check
+evaluate

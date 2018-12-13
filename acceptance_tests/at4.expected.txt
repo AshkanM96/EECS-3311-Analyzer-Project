@@ -1,0 +1,35 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& {?})
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& {(? && nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {(True && ?)})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& {(True && False), ?})
+  Report: OK.
+->disjoin
+  Expression currently specified: (&& {(True && False), (? || nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {(True && False), (True || ?)})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& {(True && False), (True || False), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& {(True && False), (True || False)})
+  Report: OK.
+->type_check
+  Expression currently specified: (&& {(True && False), (True || False)})
+  Report: (&& {(True && False), (True || False)}) is type-correct.
+->evaluate
+  Expression currently specified: (&& {(True && False), (True || False)})
+  Report: False

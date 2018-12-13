@@ -1,0 +1,32 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ?)
+  Report: Error (Set enumeration is not being specified).
+->boolean_constant(True)
+  Expression currently specified: (&& True)
+  Report: OK.
+->type_check
+  Expression currently specified: (&& True)
+  Report: (&& True) is not type-correct.
+->evaluate
+  Expression currently specified: (&& True)
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {?}
+  Report: Error: (Set enumeration must be non-empty).
+->type_check
+  Expression currently specified: {?}
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: {?}
+  Report: Error (Expression is not yet fully specified).

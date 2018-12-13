@@ -1,0 +1,11 @@
+conjoin
+conjoin
+boolean_constant(true)
+conjoin
+boolean_constant(true)
+boolean_constant(false)
+conjoin
+boolean_constant(true)
+boolean_constant(true)
+type_check
+evaluate

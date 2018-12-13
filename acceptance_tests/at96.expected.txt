@@ -1,0 +1,50 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->sum
+  Expression currently specified: (+ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (+ {?})
+  Report: OK.
+->multiply
+  Expression currently specified: (+ {(? * nil)})
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (+ {(2 * ?)})
+  Report: OK.
+->add
+  Expression currently specified: (+ {(2 * (? + nil))})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (+ {(2 * (3 + ?))})
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (+ {(2 * (3 + 4)), ?})
+  Report: OK.
+->multiply
+  Expression currently specified: (+ {(2 * (3 + 4)), (? * nil)})
+  Report: OK.
+->negative
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- ?) * nil)})
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * ?)})
+  Report: OK.
+->subtract
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (? - nil))})
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (4 - ?))})
+  Report: OK.
+->integer_constant(8)
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (4 - 8)), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (4 - 8))})
+  Report: OK.
+->type_check
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (4 - 8))})
+  Report: (+ {(2 * (3 + 4)), ((- -5) * (4 - 8))}) is type-correct.
+->evaluate
+  Expression currently specified: (+ {(2 * (3 + 4)), ((- -5) * (4 - 8))})
+  Report: -6

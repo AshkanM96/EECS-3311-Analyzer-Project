@@ -1,0 +1,7 @@
+divide
+integer_constant(1)
+multiply
+integer_constant(5)
+integer_constant(0)
+type_check
+evaluate

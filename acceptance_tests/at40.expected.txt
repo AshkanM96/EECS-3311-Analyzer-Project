@@ -1,0 +1,68 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->type_check
+  Expression currently specified: (&& ?)
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (&& ?)
+  Report: Error (Expression is not yet fully specified).
+->open_set_enumeration
+  Expression currently specified: (&& {?})
+  Report: OK.
+->type_check
+  Expression currently specified: (&& {?})
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (&& {?})
+  Report: Error (Expression is not yet fully specified).
+->close_set_enumeration
+  Expression currently specified: (&& {?})
+  Report: Error: (Set enumeration must be non-empty).
+->type_check
+  Expression currently specified: (&& {?})
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (&& {?})
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& {?})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {True, ?})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {True, True, ?})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {True, True, True, ?})
+  Report: OK.
+->type_check
+  Expression currently specified: (&& {True, True, True, ?})
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (&& {True, True, True, ?})
+  Report: Error (Expression is not yet fully specified).
+->negation
+  Expression currently specified: (&& {True, True, True, (! ?)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {True, True, True, (! True), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& {True, True, True, (! True)})
+  Report: OK.
+->type_check
+  Expression currently specified: (&& {True, True, True, (! True)})
+  Report: (&& {True, True, True, (! True)}) is type-correct.
+->evaluate
+  Expression currently specified: (&& {True, True, True, (! True)})
+  Report: False

@@ -1,0 +1,20 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {1, ?}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {1, 1, ?}
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: {1, 1, 5, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {1, 1, 5}
+  Report: OK.
+->type_check
+  Expression currently specified: {1, 1, 5}
+  Report: {1, 1, 5} is type-correct.

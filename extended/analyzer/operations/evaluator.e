@@ -25,6 +25,23 @@ feature -- Constructor
 			empty_set: set.is_empty
 		end
 
+feature {EVALUATOR} -- Unevaluable Expression Command
+
+	check_unevaluable_exprs (left_value, right_value: IMMUTABLE_STRING_8)
+		require
+			(left_value ~ "/0") or else (left_value ~ "%%!+")
+			(right_value ~ "/0") or else (right_value ~ "%%!+")
+		do
+			if (left_value ~ right_value) then
+				value := left_value
+			else
+				value := "/0%%!+"
+			end
+		ensure
+			(left_value ~ right_value) = (value ~ left_value)
+			(left_value /~ right_value) = (value ~ "/0%%!+")
+		end
+
 feature -- Constant Expressions
 
 	visit_null_expression (e: NULL_EXPRESSION)
@@ -398,37 +415,53 @@ feature -- Binary Op. Expressions
 
 	visit_division (e: DIVISION)
 		local
-			eval: EVALUATOR
+			left_e, right_e: EVALUATOR
 		do
 			is_new := False
 
 				-- evaluate left child
-			create {EVALUATOR} eval.default_create
-			e.left.visit (eval)
+			create left_e.default_create
+			e.left.visit (left_e)
 
-				-- save evaluation results before resetting
-			if (eval.value ~ "/0") then
-				value := "/0"
-			elseif (eval.value ~ "%%!+") then
-				value := "%%!+"
-			elseif (eval.value ~ "/0%%!+") then
+				-- check if all unevaluable expressions have been seen
+			if (left_e.value ~ "/0%%!+") then
 				value := "/0%%!+"
 			else
-				value := eval.value
 
 					-- evaluate right child
-				eval.reset
-				e.right.visit (eval)
+				create right_e.default_create
+				e.right.visit (right_e)
 
-					-- evaluate current
-				if ((eval.value ~ "/0") or else (eval.value ~ "0")) then
-					value := "/0"
-				elseif (eval.value ~ "%%!+") then
-					value := "%%!+"
-				elseif (eval.value ~ "/0%%!+") then
+					-- check if all unevaluable expressions have been seen
+				if (right_e.value ~ "/0%%!+") then
 					value := "/0%%!+"
 				else
-					value := (value.to_integer_64 / eval.value.to_integer_64).truncated_to_integer_64.out
+					if left_e.value.is_integer_64 then
+						if right_e.value.is_integer_64 then
+							if (right_e.value ~ "0") then
+								value := "/0"
+							else
+								value := (left_e.value.to_integer_64 // right_e.value.to_integer_64).out
+							end
+						else
+								-- not right_e.value.is_integer_64
+								-- so, right_e.value must be one of "/0" or "%%!+"
+							value := right_e.value
+						end
+					elseif right_e.value.is_integer_64 then
+							-- not left_e.value.is_integer_64
+							-- so, left_e.value must be one of "/0" or "%%!+"
+						if ((left_e.value ~ "%%!+") and then (right_e.value ~ "0")) then
+							value := "/0%%!+"
+						else
+							value := left_e.value
+						end
+					else
+							-- (not left_e.value.is_integer_64) and then (not right_e.value.is_integer_64)
+							-- so, left_e.value must be one of "/0" or "%%!+"
+							-- and, right_e.value must be one of "/0" or "%%!+"
+						check_unevaluable_exprs (left_e.value, right_e.value)
+					end
 				end
 			end
 		ensure then
@@ -438,46 +471,63 @@ feature -- Binary Op. Expressions
 
 	visit_mod (e: MOD)
 		local
-			eval: EVALUATOR
+			left_e, right_e: EVALUATOR
 			i, modulus: INTEGER_64
 		do
 			is_new := False
 
 				-- evaluate left child
-			create {EVALUATOR} eval.default_create
-			e.left.visit (eval)
+			create left_e.default_create
+			e.left.visit (left_e)
 
-				-- save evaluation results before resetting
-			if (eval.value ~ "/0") then
-				value := "/0"
-			elseif (eval.value ~ "%%!+") then
-				value := "%%!+"
-			elseif (eval.value ~ "/0%%!+") then
+				-- check if all unevaluable expressions have been seen
+			if (left_e.value ~ "/0%%!+") then
 				value := "/0%%!+"
 			else
-				value := eval.value
 
 					-- evaluate right child
-				eval.reset
-				e.right.visit (eval)
+				create right_e.default_create
+				e.right.visit (right_e)
 
-					-- evaluate current
-				if (eval.value ~ "/0") then
-					value := "/0"
-				elseif (eval.value ~ "%%!+") then
-					value := "%%!+"
-				elseif (eval.value ~ "/0%%!+") then
+					-- check if all unevaluable expressions have been seen
+				if (right_e.value ~ "/0%%!+") then
 					value := "/0%%!+"
 				else
-					modulus := eval.value.to_integer_64
-					if (modulus <= 0) then
-						value := "%%!+"
-					else
-						i := value.to_integer_64 \\ modulus
-						if (i < 0) then
-							i := i + modulus
+					if left_e.value.is_integer_64 then
+						if right_e.value.is_integer_64 then
+							modulus := right_e.value.to_integer_64
+							if (modulus <= 0) then
+								value := "%%!+"
+							else
+								i := left_e.value.to_integer_64 \\ modulus
+								if (i < 0) then
+									i := i + modulus
+								end
+								value := i.out
+							end
+						else
+								-- not right_e.value.is_integer_64
+								-- so, right_e.value must be one of "/0" or "%%!+"
+							value := right_e.value
 						end
-						value := i.out
+					elseif right_e.value.is_integer_64 then
+							-- not left_e.value.is_integer_64
+							-- so, left_e.value must be one of "/0" or "%%!+"
+						if (left_e.value ~ "/0") then
+							modulus := right_e.value.to_integer_64
+							if (modulus <= 0) then
+								value := "/0%%!+"
+							else
+								value := "/0"
+							end
+						else
+							value := left_e.value
+						end
+					else
+							-- (not left_e.value.is_integer_64) and then (not right_e.value.is_integer_64)
+							-- so, left_e.value must be one of "/0" or "%%!+"
+							-- and, right_e.value must be one of "/0" or "%%!+"
+						check_unevaluable_exprs (left_e.value, right_e.value)
 					end
 				end
 			end

@@ -1,0 +1,14 @@
+union
+open_set_enumeration
+open_set_enumeration
+boolean_constant(True)
+boolean_constant(false)
+boolean_constant(True)
+close_set_enumeration
+close_set_enumeration
+open_set_enumeration
+imply
+boolean_constant(false)
+boolean_constant(true)
+close_set_enumeration
+type_check

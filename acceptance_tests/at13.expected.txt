@@ -1,0 +1,41 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->difference
+  Expression currently specified: (? \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({{?}} \ nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({{1, ?}} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({{1}, ?} \ nil)
+  Report: OK.
+->integer_constant(6)
+  Expression currently specified: ({{1}, 6, ?} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({{1}, 6} \ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({{1}, 6} \ {?})
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({{1}, 6} \ {{?}})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({{1}, 6} \ {{1, ?}})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({{1}, 6} \ {{1}, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({{1}, 6} \ {{1}})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({{1}, 6} \ {{1}})
+  Report: Error (Expression is not type-correct).

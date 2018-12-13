@@ -1,0 +1,115 @@
+open_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+difference
+open_set_enumeration
+integer_constant (3)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (10)
+integer_constant (3)
+close_set_enumeration
+open_set_enumeration
+add
+integer_constant (1)
+integer_constant (1)
+close_set_enumeration
+open_set_enumeration
+negative
+integer_constant (-2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (5)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+difference
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+negation
+boolean_constant (False)
+close_set_enumeration
+open_set_enumeration
+add
+integer_constant (1)
+integer_constant (1)
+close_set_enumeration
+open_set_enumeration
+negative
+integer_constant (-2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (5)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+boolean_constant (False)
+close_set_enumeration
+difference
+open_set_enumeration
+integer_constant (3)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (10)
+integer_constant (3)
+close_set_enumeration
+open_set_enumeration
+conjoin
+boolean_constant (False)
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+negation
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+boolean_constant (False)
+close_set_enumeration
+difference
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+disjoin
+boolean_constant (False)
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+imply
+boolean_constant (False)
+boolean_constant (False)
+close_set_enumeration
+open_set_enumeration
+negation
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset

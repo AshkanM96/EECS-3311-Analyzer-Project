@@ -1,0 +1,122 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True > ?)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True > True)
+  Report: OK.
+->type_check
+  Expression currently specified: (True > True)
+  Report: (True > True) is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(8)
+  Expression currently specified: (8 > ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (8 > 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (8 > 4)
+  Report: (8 > 4) is type-correct.
+->evaluate
+  Expression currently specified: (8 > 4)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (4 > ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (4 > 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (4 > 4)
+  Report: (4 > 4) is type-correct.
+->evaluate
+  Expression currently specified: (4 > 4)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (2 > ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (2 > 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (2 > 4)
+  Report: (2 > 4) is type-correct.
+->evaluate
+  Expression currently specified: (2 > 4)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(8)
+  Expression currently specified: (8 < ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (8 < 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (8 < 4)
+  Report: (8 < 4) is type-correct.
+->evaluate
+  Expression currently specified: (8 < 4)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (4 < ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (4 < 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (4 < 4)
+  Report: (4 < 4) is type-correct.
+->evaluate
+  Expression currently specified: (4 < 4)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (2 < ?)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (2 < 4)
+  Report: OK.
+->type_check
+  Expression currently specified: (2 < 4)
+  Report: (2 < 4) is type-correct.
+->evaluate
+  Expression currently specified: (2 < 4)
+  Report: True

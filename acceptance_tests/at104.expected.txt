@@ -1,0 +1,380 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: (5 / 7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / 7)
+  Report: 0
+->type_check
+  Expression currently specified: (5 / 7)
+  Report: (5 / 7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / 5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / 5)
+  Report: 1
+->type_check
+  Expression currently specified: (5 / 5)
+  Report: (5 / 5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (5 / 3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / 3)
+  Report: 1
+->type_check
+  Expression currently specified: (5 / 3)
+  Report: (5 / 3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: (5 / -7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / -7)
+  Report: 0
+->type_check
+  Expression currently specified: (5 / -7)
+  Report: (5 / -7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (5 / -5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / -5)
+  Report: -1
+->type_check
+  Expression currently specified: (5 / -5)
+  Report: (5 / -5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (5 / -3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (5 / -3)
+  Report: -1
+->type_check
+  Expression currently specified: (5 / -3)
+  Report: (5 / -3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: (-5 / 7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / 7)
+  Report: 0
+->type_check
+  Expression currently specified: (-5 / 7)
+  Report: (-5 / 7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (-5 / 5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / 5)
+  Report: -1
+->type_check
+  Expression currently specified: (-5 / 5)
+  Report: (-5 / 5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (-5 / 3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / 3)
+  Report: -1
+->type_check
+  Expression currently specified: (-5 / 3)
+  Report: (-5 / 3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: (-5 / -7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / -7)
+  Report: 0
+->type_check
+  Expression currently specified: (-5 / -7)
+  Report: (-5 / -7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / -5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / -5)
+  Report: 1
+->type_check
+  Expression currently specified: (-5 / -5)
+  Report: (-5 / -5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-5 / ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (-5 / -3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-5 / -3)
+  Report: 1
+->type_check
+  Expression currently specified: (-5 / -3)
+  Report: (-5 / -3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: (0 / 7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / 7)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / 7)
+  Report: (0 / 7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (0 / 5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / 5)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / 5)
+  Report: (0 / 5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (0 / 3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / 3)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / 3)
+  Report: (0 / 3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: (0 / -7)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / -7)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / -7)
+  Report: (0 / -7) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (0 / -5)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / -5)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / -5)
+  Report: (0 / -5) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (0 / -3)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / -3)
+  Report: 0
+->type_check
+  Expression currently specified: (0 / -3)
+  Report: (0 / -3) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: (7 / ?)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (7 / 0)
+  Report: OK.
+->evaluate
+  Expression currently specified: (7 / 0)
+  Report: Error (Divisor is zero).
+->type_check
+  Expression currently specified: (7 / 0)
+  Report: (7 / 0) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / ?)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (0 / 0)
+  Report: OK.
+->evaluate
+  Expression currently specified: (0 / 0)
+  Report: Error (Divisor is zero).
+->type_check
+  Expression currently specified: (0 / 0)
+  Report: (0 / 0) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(-7)
+  Expression currently specified: (-7 / ?)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (-7 / 0)
+  Report: OK.
+->evaluate
+  Expression currently specified: (-7 / 0)
+  Report: Error (Divisor is zero).
+->type_check
+  Expression currently specified: (-7 / 0)
+  Report: (-7 / 0) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

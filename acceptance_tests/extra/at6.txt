@@ -1,0 +1,8 @@
+add (2)
+add (2, 2)
+empty_set (2)
+empty_set(2, 3)
+subtract(2,3)
+subtract(2)
+close_set
+reset

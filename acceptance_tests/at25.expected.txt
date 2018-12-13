@@ -1,0 +1,41 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->type_check
+  Expression currently specified: (? + nil)
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->type_check
+  Expression currently specified: ?
+  Report: Error (Expression is not yet fully specified).
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False + ?)
+  Report: OK.
+->type_check
+  Expression currently specified: (False + ?)
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (False + ?)
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(1)
+  Expression currently specified: (False + 1)
+  Report: OK.
+->type_check
+  Expression currently specified: (False + 1)
+  Report: (False + 1) is not type-correct.
+->evaluate
+  Expression currently specified: (False + 1)
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.

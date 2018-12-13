@@ -11,17 +11,19 @@ inherit
 
 feature -- Constant Type Flags
 
-	type_invalid: INTEGER = -1
+	type_invalid: INTEGER_8 = -1
 
-	type_unknown: INTEGER = 0
+	type_unknown: INTEGER_8 = 0
 
-	type_bool: INTEGER = 1
+	type_bool: INTEGER_8 = 1
 
-	type_int: INTEGER = 2
+	type_int: INTEGER_8 = 2
 
 feature -- Attributes
 
-	type_flag, set_depth: INTEGER
+	type_flag: INTEGER_8
+
+	set_depth: NATURAL_64
 
 	division_by_zero, mod_by_not_positive: BOOLEAN
 
@@ -1360,7 +1362,7 @@ feature -- Composite Expressions
 invariant
 	different_type_flag_constants: (type_invalid /= type_unknown) and then (type_invalid /= type_bool) and then (type_invalid /= type_int) and then (type_unknown /= type_bool) and then (type_unknown /= type_int) and then (type_bool /= type_int)
 	correct_type_flag: (type_flag = type_invalid) or else (type_flag = type_unknown) or else (type_flag = type_bool) or else (type_flag = type_int)
-	set_depth_non_negative: set_depth >= 0
+		--	set_depth_non_negative: set_depth >= 0
 	set_depth_zero: (set_depth = 0) implies (type_flag /= type_unknown)
 	correct_type: is_bool or else is_int or else is_set_enum or else (not is_type_correct)
 

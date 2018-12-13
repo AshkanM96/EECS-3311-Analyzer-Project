@@ -1,0 +1,32 @@
+sum
+open_set_enumeration
+integer_constant (1)
+integer_constant (1)
+integer_constant (1)
+integer_constant (1)
+integer_constant (1)
+integer_constant (1)
+close_set_enumeration
+evaluate
+type_check
+close_set_enumeration
+open_set_enumeration
+close_set_enumeration
+reset
+reset
+sum
+integer_constant (1)
+evaluate
+reset
+sum
+open_set_enumeration
+integer_constant (1)
+add
+integer_constant (1)
+integer_constant (0)
+multiply
+integer_constant (0)
+integer_constant (1000)
+integer_constant (-1)
+close_set_enumeration
+evaluate

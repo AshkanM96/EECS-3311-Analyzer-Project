@@ -1,0 +1,98 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->sum
+  Expression currently specified: (+ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (+ {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, ?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, 1, ?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, 1, 1, ?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, 1, 1, 1, ?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, 1, 1, 1, 1, ?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: OK.
+->evaluate
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: 1
+->type_check
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: (+ {1, 1, 1, 1, 1, 1}) is type-correct.
+->close_set_enumeration
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: Error (Expression is already fully specified).
+->open_set_enumeration
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: Error (Expression is already fully specified).
+->close_set_enumeration
+  Expression currently specified: (+ {1, 1, 1, 1, 1, 1})
+  Report: Error (Expression is already fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->sum
+  Expression currently specified: (+ ?)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ 1)
+  Report: OK.
+->evaluate
+  Expression currently specified: (+ 1)
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->sum
+  Expression currently specified: (+ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (+ {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, ?})
+  Report: OK.
+->add
+  Expression currently specified: (+ {1, (? + nil)})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (+ {1, (1 + ?)})
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (+ {1, (1 + 0), ?})
+  Report: OK.
+->multiply
+  Expression currently specified: (+ {1, (1 + 0), (? * nil)})
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (+ {1, (1 + 0), (0 * ?)})
+  Report: OK.
+->integer_constant(1000)
+  Expression currently specified: (+ {1, (1 + 0), (0 * 1000), ?})
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: (+ {1, (1 + 0), (0 * 1000), -1, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (+ {1, (1 + 0), (0 * 1000), -1})
+  Report: OK.
+->evaluate
+  Expression currently specified: (+ {1, (1 + 0), (0 * 1000), -1})
+  Report: 0

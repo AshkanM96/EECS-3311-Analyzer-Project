@@ -1,0 +1,107 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True = ?)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True = True)
+  Report: OK.
+->type_check
+  Expression currently specified: (True = True)
+  Report: (True = True) is type-correct.
+->evaluate
+  Expression currently specified: (True = True)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True = ?)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (True = False)
+  Report: OK.
+->type_check
+  Expression currently specified: (True = False)
+  Report: (True = False) is type-correct.
+->evaluate
+  Expression currently specified: (True = False)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False = ?)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (False = True)
+  Report: OK.
+->type_check
+  Expression currently specified: (False = True)
+  Report: (False = True) is type-correct.
+->evaluate
+  Expression currently specified: (False = True)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False = ?)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False = False)
+  Report: OK.
+->type_check
+  Expression currently specified: (False = False)
+  Report: (False = False) is type-correct.
+->evaluate
+  Expression currently specified: (False = False)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: (-1 = ?)
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: (-1 = -1)
+  Report: OK.
+->type_check
+  Expression currently specified: (-1 = -1)
+  Report: (-1 = -1) is type-correct.
+->evaluate
+  Expression currently specified: (-1 = -1)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 = ?)
+  Report: OK.
+->integer_constant(7)
+  Expression currently specified: (5 = 7)
+  Report: OK.
+->type_check
+  Expression currently specified: (5 = 7)
+  Report: (5 = 7) is type-correct.
+->evaluate
+  Expression currently specified: (5 = 7)
+  Report: False

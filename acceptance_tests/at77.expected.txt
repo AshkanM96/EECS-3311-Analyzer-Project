@@ -1,0 +1,107 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (3 < ?)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (3 < 1)
+  Report: OK.
+->type_check
+  Expression currently specified: (3 < 1)
+  Report: (3 < 1) is type-correct.
+->evaluate
+  Expression currently specified: (3 < 1)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (3 < ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (3 < -3)
+  Report: OK.
+->type_check
+  Expression currently specified: (3 < -3)
+  Report: (3 < -3) is type-correct.
+->evaluate
+  Expression currently specified: (3 < -3)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->less_than
+  Expression currently specified: (? < nil)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (-3 < ?)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-3 < -5)
+  Report: OK.
+->type_check
+  Expression currently specified: (-3 < -5)
+  Report: (-3 < -5) is type-correct.
+->evaluate
+  Expression currently specified: (-3 < -5)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (3 > ?)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (3 > 1)
+  Report: OK.
+->type_check
+  Expression currently specified: (3 > 1)
+  Report: (3 > 1) is type-correct.
+->evaluate
+  Expression currently specified: (3 > 1)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (3 > ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (3 > -3)
+  Report: OK.
+->type_check
+  Expression currently specified: (3 > -3)
+  Report: (3 > -3) is type-correct.
+->evaluate
+  Expression currently specified: (3 > -3)
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->greater_than
+  Expression currently specified: (? > nil)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (-3 > ?)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (-3 > -5)
+  Report: OK.
+->type_check
+  Expression currently specified: (-3 > -5)
+  Report: (-3 > -5) is type-correct.
+->evaluate
+  Expression currently specified: (-3 > -5)
+  Report: True

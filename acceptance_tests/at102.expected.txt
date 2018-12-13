@@ -1,0 +1,119 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{?}}}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{{{True, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{True}}}, {?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{True}}}, {{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{True}}}, {{{?}}}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{{{True}}}, {{{2, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}}, {{{2}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}}, {{{2}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}}, {{{2}}}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{True}}}, {{{2}}}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{{{True}}}, {{{2}}}}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{{{True}}}, {{{2}}}}
+  Report: {{{{True}}}, {{{2}}}} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{?}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{?}}}}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{{{{2, ?}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{{?}}}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{{{{2}}}}, {{{3, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{{3}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{{3}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{{3}}}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{{{{2}}}}, {{{3}}}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{{{{2}}}}, {{{3}}}}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{{{{2}}}}, {{{3}}}}
+  Report: {{{{{2}}}}, {{{3}}}} is not type-correct.

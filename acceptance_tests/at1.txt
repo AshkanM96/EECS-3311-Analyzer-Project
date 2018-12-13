@@ -1,0 +1,10 @@
+reset
+divide
+type_check
+evaluate
+reset
+divide
+integer_constant (5)
+integer_constant (2)
+type_check
+evaluate 

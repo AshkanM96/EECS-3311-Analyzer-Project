@@ -303,7 +303,7 @@ feature -- Binary Op. Expressions
 			e.right.visit (eval)
 
 				-- evaluate current
-			value := (value.to_integer_64 / eval.value.to_integer_64).truncated_to_integer_64.out
+			value := (value.to_integer_64 // eval.value.to_integer_64).out
 		ensure then
 			correct_value: value.is_integer_64
 			empty_set: set.is_empty

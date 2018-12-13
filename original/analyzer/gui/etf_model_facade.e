@@ -123,10 +123,10 @@ feature -- Man Page
 			union
 			intersect
 			difference
-			subset_equal
-			subset_proper
-			superset_equal
-			superset_proper
+			subset_equal, subeq
+			subset_proper, subneq
+			superset_equal, supeq
+			superset_proper, supneq
 			negative
 			negation, not
 			sum
@@ -138,7 +138,7 @@ feature -- Man Page
 			close_set_enumeration, close_set
 		]"
 
-		-- invariant
-		--	 err_msg_set: error implies (not status_message.is_empty)
+invariant
+	err_msg_set: error implies (not status_message.is_empty)
 
 end

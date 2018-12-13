@@ -1,0 +1,158 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->negation
+  Expression currently specified: {{(! ?)}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{(! True), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ?}
+  Report: OK.
+->intersect
+  Expression currently specified: {{(! True)}, (? /\ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{(! True)}, ({?} /\ nil)}
+  Report: OK.
+->multiply
+  Expression currently specified: {{(! True)}, ({(? * nil)} /\ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{(! True)}, ({((? / nil) * nil)} /\ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{(! True)}, ({((2 / ?) * nil)} /\ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * ?)} /\ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0), ?} /\ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {(? mod nil)})}
+  Report: OK.
+->add
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((? + nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + ?) mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (? / nil)) mod nil)})}
+  Report: OK.
+->integer_constant(28213821)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / ?)) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod ?)})}
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1)})}
+  Report: Error (Divisor is zero and Modulus is not positive).
+->type_check
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1)})}
+  Report: {{(! True)}, ({((2 / 0) * 0)} /\ {((3 + (28213821 / 0)) mod -1)})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->negation
+  Expression currently specified: {{(! ?)}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{(! True), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ?}
+  Report: OK.
+->union
+  Expression currently specified: {{(! True)}, (? \/ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{(! True)}, ({?} \/ nil)}
+  Report: OK.
+->multiply
+  Expression currently specified: {{(! True)}, ({(? * nil)} \/ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{(! True)}, ({((? / nil) * nil)} \/ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{(! True)}, ({((2 / ?) * nil)} \/ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * ?)} \/ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0), ?} \/ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {?})}
+  Report: OK.
+->mod
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {(? mod nil)})}
+  Report: OK.
+->add
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((? + nil) mod nil)})}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + ?) mod nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (? / nil)) mod nil)})}
+  Report: OK.
+->integer_constant(28213821)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / ?)) mod nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod ?)})}
+  Report: OK.
+->integer_constant(-1)
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1)})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1)})}
+  Report: {{(! True)}, ({((2 / 0) * 0)} \/ {((3 + (28213821 / 0)) mod -1)})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

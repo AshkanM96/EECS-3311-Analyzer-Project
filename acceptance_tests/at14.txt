@@ -1,0 +1,10 @@
+open_set_enumeration
+open_set_enumeration
+integer_constant (3)
+boolean_constant (false)
+close_set_enumeration
+open_set_enumeration
+integer_constant (1)
+close_set_enumeration
+close_set_enumeration
+evaluate

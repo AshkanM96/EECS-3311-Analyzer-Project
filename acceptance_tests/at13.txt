@@ -1,0 +1,13 @@
+difference
+open_set_enumeration
+open_set_enumeration
+integer_constant(1)
+close_set_enumeration
+integer_constant(6)
+close_set_enumeration
+open_set_enumeration
+open_set_enumeration
+integer_constant(1)
+close_set_enumeration
+close_set_enumeration
+evaluate

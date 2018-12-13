@@ -1,0 +1,182 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{False}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {{False}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{False}, ({?} \ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {{False}, ({(? / nil)} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{False}, ({(2 / ?)} \ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{False}, ({(2 / 0), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{False}, ({(2 / 0)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{False}, ({(2 / 0)} \ {?})}
+  Report: OK.
+->add
+  Expression currently specified: {{False}, ({(2 / 0)} \ {(? + nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((? / nil) + nil)})}
+  Report: OK.
+->integer_constant(9)
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / ?) + nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + ?)})}
+  Report: OK.
+->integer_constant(132321)
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321)})}
+  Report: Error (Divisor is zero).
+->type_check
+  Expression currently specified: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321)})}
+  Report: {{False}, ({(2 / 0)} \ {((9 / 0) + 132321)})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->difference
+  Expression currently specified: {(? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({?} \ nil)}
+  Report: OK.
+->divide
+  Expression currently specified: {({(? / nil)} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {({(2 / ?)} \ nil)}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {({(2 / 0), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {?})}
+  Report: OK.
+->add
+  Expression currently specified: {({(2 / 0)} \ {(? + nil)})}
+  Report: OK.
+->divide
+  Expression currently specified: {({(2 / 0)} \ {((? / nil) + nil)})}
+  Report: OK.
+->integer_constant(9)
+  Expression currently specified: {({(2 / 0)} \ {((9 / ?) + nil)})}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + ?)})}
+  Report: OK.
+->integer_constant(132321)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False}}
+  Report: Error (Divisor is zero).
+->type_check
+  Expression currently specified: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False}}
+  Report: {({(2 / 0)} \ {((9 / 0) + 132321)}), {True}, {False}, {True}, {True}, {False}, {False}, {False}} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

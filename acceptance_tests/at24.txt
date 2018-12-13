@@ -1,0 +1,34 @@
+for_all
+open_set_enumeration
+close_set_enumeration
+add
+close_set_enumeration
+integer_constant (2)
+integer_constant (3)
+close_set_enumeration
+evaluate
+reset
+for_all
+open_set_enumeration
+equals
+add
+add
+close_set_enumeration
+integer_constant (3)
+integer_constant (2)
+integer_constant (-9)
+negative
+close_set_enumeration
+integer_constant (4)
+conjoin
+less_than
+integer_constant (5)
+integer_constant (4)
+boolean_constant (true)
+disjoin
+negation
+boolean_constant (false)
+boolean_constant (false)
+close_set_enumeration
+evaluate
+type_check

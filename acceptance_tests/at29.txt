@@ -1,0 +1,15 @@
+difference
+open_set_enumeration
+integer_constant(13)
+integer_constant(16)
+integer_constant(22)
+integer_constant(44)
+integer_constant(88)
+close_set_enumeration
+open_set_enumeration
+integer_constant(44)
+integer_constant(88)
+integer_constant(90)
+integer_constant(100) 
+close_set_enumeration
+type_check

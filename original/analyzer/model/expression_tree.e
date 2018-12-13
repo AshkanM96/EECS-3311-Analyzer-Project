@@ -80,7 +80,8 @@ feature {NONE} -- Tree Forward Traversal
 						binary_op.open_right
 					end
 				end
-			else -- (curr.parent = root)
+			else
+					-- at this point, we know that: curr.parent = root
 				curr := root
 			end
 		end
@@ -89,8 +90,8 @@ feature -- Adding
 
 	add (e: EXPRESSION)
 		require
-			valid_argument: (e /= Void) and then (not e.is_null)
-			valid_state: is_open or else (not e.is_const)
+			valid_argument: (e /= Void) and then (not e.is_null) and then e.is_new
+			valid_state: is_open or else e.is_open
 		do
 			if is_open then
 				if is_new_tree then
@@ -204,7 +205,6 @@ feature -- Visitor Pattern
 		end
 
 invariant
-	open_vs_root_open_rec: is_open = root.is_open_rec
 	new_tree_implies_open_and_diff_ptr_and_same_obj: is_new_tree implies (is_open and then (curr /= root) and then (curr ~ root))
 	not_new_tree_implies_not_open_vs_same_ptr: (not is_new_tree) implies ((not is_open) = (curr = root))
 

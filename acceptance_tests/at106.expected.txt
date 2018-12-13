@@ -1,0 +1,2402 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({True} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& ({True} \/ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: (&& ({True} \/ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& (({{3, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{?}}) \/ nil))
+  Report: OK.
+->add
+  Expression currently specified: (&& (({{3}} \ {{(? + nil)}}) \/ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& (({{3}} \ {{(2 + ?)}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: (&& (({{3}} \ {{(2 + 1)}}) \/ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({True} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& ({True} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({True} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& ({True} \/ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (&& ({True} \/ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{?}}) \/ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& (({{False}} \ {{(? && nil)}}) \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && ?)}}) \/ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (&& (({{False}} \ {{(True && (? = nil))}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2)), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({True} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& ({True} /\ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: (&& ({True} /\ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& (({{3, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{?}}) /\ nil))
+  Report: OK.
+->add
+  Expression currently specified: (&& (({{3}} \ {{(? + nil)}}) /\ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& (({{3}} \ {{(2 + ?)}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: (&& (({{3}} \ {{(2 + 1)}}) /\ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({True} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& ({True} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({True} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& ({True} /\ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (&& ({True} /\ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{?}}) /\ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& (({{False}} \ {{(? && nil)}}) /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && ?)}}) /\ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (&& (({{False}} \ {{(True && (? = nil))}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2)), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} \/ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& ({False, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({False} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& ({False} \/ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: False
+->type_check
+  Expression currently specified: (&& ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: (&& ({False} \/ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& (({{3, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{?}}) \/ nil))
+  Report: OK.
+->add
+  Expression currently specified: (&& (({{3}} \ {{(? + nil)}}) \/ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& (({{3}} \ {{(2 + ?)}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: (&& (({{3}} \ {{(2 + 1)}}) \/ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} \/ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& ({False, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({False} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& ({False} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({False} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& ({False} \/ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: False
+->type_check
+  Expression currently specified: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (&& ({False} \/ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->union
+  Expression currently specified: (&& (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{?}}) \/ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& (({{False}} \ {{(? && nil)}}) \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && ?)}}) \/ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (&& (({{False}} \ {{(True && (? = nil))}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2)), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: (&& (({{False}} \ {{(True && (1 = 2))}}) \/ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& ({False, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({False} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& ({False} /\ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: (&& ({False} /\ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (&& (({{3, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{?}}) /\ nil))
+  Report: OK.
+->add
+  Expression currently specified: (&& (({{3}} \ {{(? + nil)}}) /\ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (&& (({{3}} \ {{(2 + ?)}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: (&& (({{3}} \ {{(2 + 1)}}) /\ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& ({False, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ({False} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& ({False} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({False} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& ({False} /\ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: True
+->type_check
+  Expression currently specified: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (&& ({False} /\ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (&& (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (&& ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{?}}) /\ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& (({{False}} \ {{(? && nil)}}) /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& (({{False}} \ {{(True && ?)}}) /\ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (&& (({{False}} \ {{(True && (? = nil))}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2)), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: True
+->type_check
+  Expression currently specified: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: (&& (({{False}} \ {{(True && (1 = 2))}}) /\ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({True} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| ({True} \/ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: True
+->type_check
+  Expression currently specified: (|| ({True} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: (|| ({True} \/ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| (({{3, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{?}}) \/ nil))
+  Report: OK.
+->add
+  Expression currently specified: (|| (({{3}} \ {{(? + nil)}}) \/ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| (({{3}} \ {{(2 + ?)}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {True}))
+  Report: (|| (({{3}} \ {{(2 + 1)}}) \/ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({True} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| ({True} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({True} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| ({True} \/ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: True
+->type_check
+  Expression currently specified: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (|| ({True} \/ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{?}}) \/ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| (({{False}} \ {{(? && nil)}}) \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && ?)}}) \/ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (|| (({{False}} \ {{(True && (? = nil))}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2)), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: True
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {True}))
+  Report: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({True} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| ({True} /\ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({True} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: (|| ({True} /\ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| (({{3, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{?}}) /\ nil))
+  Report: OK.
+->add
+  Expression currently specified: (|| (({{3}} \ {{(? + nil)}}) /\ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| (({{3}} \ {{(2 + ?)}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {True}))
+  Report: (|| (({{3}} \ {{(2 + 1)}}) /\ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({True} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| ({True} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({True} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| ({True} /\ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (|| ({True} /\ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{?}}) /\ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| (({{False}} \ {{(? && nil)}}) /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && ?)}}) /\ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (|| (({{False}} \ {{(True && (? = nil))}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2)), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {?}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {True, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {True}))
+  Report: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {True})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} \/ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| ({False, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({False} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| ({False} \/ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({False} \/ ({{3}} \ {{(2 + 1)}})))
+  Report: (|| ({False} \/ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| (({{3, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{?}}) \/ nil))
+  Report: OK.
+->add
+  Expression currently specified: (|| (({{3}} \ {{(? + nil)}}) \/ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| (({{3}} \ {{(2 + ?)}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) \/ {False}))
+  Report: (|| (({{3}} \ {{(2 + 1)}}) \/ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} \/ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| ({False, ?} \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({False} \/ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| ({False} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({False} \/ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| ({False} \/ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (|| ({False} \/ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->union
+  Expression currently specified: (|| (? \/ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{?}} \ nil) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False, ?}} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}, ?} \ nil) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ ?) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {?}) \/ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{?}}) \/ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| (({{False}} \ {{(? && nil)}}) \/ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && ?)}}) \/ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (|| (({{False}} \ {{(True && (? = nil))}}) \/ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) \/ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2)), ?}}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}, ?}) \/ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {False}))
+  Report: (|| (({{False}} \ {{(True && (1 = 2))}}) \/ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| ({False, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({False} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{?}} \ nil)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| ({False} /\ ({{3, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{?}})))
+  Report: OK.
+->add
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(? + nil)}})))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + ?)}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + 1), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + 1)}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({False} /\ ({{3}} \ {{(2 + 1)}})))
+  Report: (|| ({False} /\ ({{3}} \ {{(2 + 1)}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (|| (({{3, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{?}}) /\ nil))
+  Report: OK.
+->add
+  Expression currently specified: (|| (({{3}} \ {{(? + nil)}}) /\ nil))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| (({{3}} \ {{(2 + ?)}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{3}} \ {{(2 + 1)}}) /\ {False}))
+  Report: (|| (({{3}} \ {{(2 + 1)}}) /\ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({?} /\ nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| ({False, ?} /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ?))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ({False} /\ (? \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({?} \ nil)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{?}} \ nil)))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| ({False} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({False} /\ ({{?}} \ nil)))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| ({False} /\ ({{False, ?}} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}, ?} \ nil)))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ ?)))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {?})))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{?}})))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(? && nil)}})))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && ?)}})))
+  Report: OK.
+->equals
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (? = nil))}})))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = ?))}})))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2)), ?}})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2))}, ?})))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: False
+->type_check
+  Expression currently specified: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2))}})))
+  Report: (|| ({False} /\ ({{False}} \ {{(True && (1 = 2))}}))) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->intersect
+  Expression currently specified: (|| (? /\ nil))
+  Report: OK.
+->difference
+  Expression currently specified: (|| ((? \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({?} \ nil) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{?}} \ nil) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False, ?}} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}, ?} \ nil) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ ?) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {?}) /\ nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{?}}) /\ nil))
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| (({{False}} \ {{(? && nil)}}) /\ nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| (({{False}} \ {{(True && ?)}}) /\ nil))
+  Report: OK.
+->equals
+  Expression currently specified: (|| (({{False}} \ {{(True && (? = nil))}}) /\ nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Set enumeration is not being specified).
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = ?))}}) /\ nil))
+  Report: Error (Expression is not yet fully specified).
+->integer_constant(2)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2)), ?}}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}, ?}) /\ nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: False
+->type_check
+  Expression currently specified: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {False}))
+  Report: (|| (({{False}} \ {{(True && (1 = 2))}}) /\ {False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

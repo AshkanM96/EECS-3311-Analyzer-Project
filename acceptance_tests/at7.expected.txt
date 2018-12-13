@@ -1,0 +1,110 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{2}, {True, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{2}, {True, False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{?}}}
+  Report: OK.
+->integer_constant(2345678910)
+  Expression currently specified: {{2}, {True, False}, {{2345678910, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, ?}}
+  Report: OK.
+->integer_constant(23)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {?}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{?}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{?}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{?}}}}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False, ?}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, ?}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {?}}}}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{?}}}}}}
+  Report: OK.
+->integer_constant(343)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343, ?}}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}, ?}}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}, ?}}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}, ?}}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, ?}
+  Report: OK.
+->add
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (? + nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + ?)}
+  Report: OK.
+->divide
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (? / nil))}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / ?))}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / 0)), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / 0))}
+  Report: OK.
+->type_check
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / 0))}
+  Report: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / 0))} is not type-correct.
+->evaluate
+  Expression currently specified: {{2}, {True, False}, {{2345678910}, 23}, {{{{False}, {{343}}}}}, (2 + (0 / 0))}
+  Report: Error (Expression is not type-correct).

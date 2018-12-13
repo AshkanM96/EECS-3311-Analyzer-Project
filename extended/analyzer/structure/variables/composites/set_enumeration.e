@@ -450,7 +450,4 @@ feature -- Visitor Pattern
 			v.visit_set_enum (Current)
 		end
 
-invariant
-	all_not_null: across children as cursor all (not cursor.item.is_null) end
-
 end

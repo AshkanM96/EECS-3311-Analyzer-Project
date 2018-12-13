@@ -51,6 +51,10 @@ feature -- Type Queries
 
 feature -- State Queries
 
+	is_new: BOOLEAN
+		deferred
+		end
+
 	is_open: BOOLEAN
 		deferred
 		end
@@ -66,8 +70,10 @@ feature -- Adding
 	add (e: EXPRESSION)
 		require
 			valid_argument: (e /= Void) and then (not e.is_null)
-			valid_current: is_open and then (not is_const)
+			open: is_open
 		deferred
+		ensure
+			not_new: not is_new
 		end
 
 feature -- Output
@@ -103,5 +109,8 @@ feature -- Visitor Pattern
 		ensure
 			not_new_visitor: not v.is_new
 		end
+
+invariant
+	const_new_open_relation: is_const implies (is_new and then (not is_open))
 
 end

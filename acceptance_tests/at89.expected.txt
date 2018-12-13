@@ -1,0 +1,104 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->for_all
+  Expression currently specified: (&& ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (&& {?})
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& {(? && nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {(True && ?)})
+  Report: OK.
+->disjoin
+  Expression currently specified: (&& {(True && (? || nil))})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {(True && (True || ?))})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& {(True && (True || False)), ?})
+  Report: OK.
+->disjoin
+  Expression currently specified: (&& {(True && (True || False)), (? || nil)})
+  Report: OK.
+->conjoin
+  Expression currently specified: (&& {(True && (True || False)), ((? && nil) || nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (&& {(True && (True || False)), ((True && ?) || nil)})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || ?)})
+  Report: OK.
+->negative
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || (- ?))})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || (- 1)), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || (- 1))})
+  Report: OK.
+->type_check
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || (- 1))})
+  Report: (&& {(True && (True || False)), ((True && False) || (- 1))}) is not type-correct.
+->evaluate
+  Expression currently specified: (&& {(True && (True || False)), ((True && False) || (- 1))})
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| {?})
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| {(? && nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| {(True && ?)})
+  Report: OK.
+->sum
+  Expression currently specified: (|| {(True && (+ ?))})
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| {(True && (+ {?}))})
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (|| {(True && (+ {2, ?}))})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| {(True && (+ {2})), ?})
+  Report: OK.
+->disjoin
+  Expression currently specified: (|| {(True && (+ {2})), (? || nil)})
+  Report: OK.
+->conjoin
+  Expression currently specified: (|| {(True && (+ {2})), ((? && nil) || nil)})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| {(True && (+ {2})), ((True && ?) || nil)})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || ?)})
+  Report: OK.
+->negation
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || (! ?))})
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || (! True)), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || (! True))})
+  Report: OK.
+->type_check
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || (! True))})
+  Report: (|| {(True && (+ {2})), ((True && False) || (! True))}) is not type-correct.
+->evaluate
+  Expression currently specified: (|| {(True && (+ {2})), ((True && False) || (! True))})
+  Report: Error (Expression is not type-correct).

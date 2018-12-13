@@ -1,0 +1,9 @@
+sum
+open_set_enumeration
+integer_constant(1)
+integer_constant(2)
+integer_constant(3)
+integer_constant(4)
+close_set_enumeration
+type_check
+evaluate

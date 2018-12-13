@@ -1,0 +1,29 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->subtract
+  Expression currently specified: (? - nil)
+  Report: OK.
+->subtract
+  Expression currently specified: ((? - nil) - nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ((1 - ?) - nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ((1 - 2) - ?)
+  Report: OK.
+->subtract
+  Expression currently specified: ((1 - 2) - (? - nil))
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: ((1 - 2) - (-5 - ?))
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: ((1 - 2) - (-5 - -10))
+  Report: OK.
+->type_check
+  Expression currently specified: ((1 - 2) - (-5 - -10))
+  Report: ((1 - 2) - (-5 - -10)) is type-correct.
+->evaluate
+  Expression currently specified: ((1 - 2) - (-5 - -10))
+  Report: -6

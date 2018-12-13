@@ -1,0 +1,26 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->add
+  Expression currently specified: ((? + nil) + nil)
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: (({} + ?) + nil)
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: (({} + {}) + ?)
+  Report: OK.
+->subtract
+  Expression currently specified: (({} + {}) + (? - nil))
+  Report: OK.
+->subtract
+  Expression currently specified: (({} + {}) + ((? - nil) - nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (({} + {}) + ((? - nil) - nil))
+  Report: Error (Set enumeration is not being specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.

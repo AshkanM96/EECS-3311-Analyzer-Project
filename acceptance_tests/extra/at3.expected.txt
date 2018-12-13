@@ -1,0 +1,737 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->intersect
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? /\ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} /\ nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} /\ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} /\ nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} /\ nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} /\ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14})}
+  Report: {{}, {2, 4}, {2, -2}, {14}}
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} /\ {14})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} \ nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} \ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} \ nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} \ nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14})}
+  Report: {{}, {2, 4}, {2, -2}, {1}}
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \ {14})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->union
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? \/ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} \/ nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} \/ nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} \/ nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} \/ nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} \/ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14})}
+  Report: {{}, {2, 4}, {2, -2}, {1, 14}}
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} \/ {14})} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->subset_equal
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? <= nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} <= nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} <= nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} <= nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} <= nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} <= nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} <= {14})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->subset_proper
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? < nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} < nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} < nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} < nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} < nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} < nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} < {14})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->superset_equal
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? >= nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} >= nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} >= nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} >= nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} >= nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} >= nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} >= {14})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{}, {2, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{}, {2, (3 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, ?}
+  Report: OK.
+->empty_set_constant
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {?}}
+  Report: OK.
+->divide
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(? / nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, ?}}
+  Report: OK.
+->negative
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), ?}}
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, ?}}
+  Report: OK.
+->subtract
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (? - nil)}}
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - ?)}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ?}
+  Report: OK.
+->superset_proper
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, (? > nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({?} > nil)}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, ?} > nil)}
+  Report: OK.
+->mod
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (? mod nil)} > nil)}
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod ?)} > nil)}
+  Report: OK.
+->integer_constant(19)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19), ?} > nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {?})}
+  Report: OK.
+->integer_constant(14)
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14})}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14})}
+  Report: {{}, {2, (3 + 1)}, {}, {(4 / 2), 2, (- 2), -2, (4 - 2)}, ({1, (-5 mod 19)} > {14})} is not type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

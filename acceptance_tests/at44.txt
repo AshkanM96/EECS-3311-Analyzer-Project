@@ -1,0 +1,35 @@
+difference
+union
+open_set_enumeration
+boolean_constant (false)
+boolean_constant (true)
+conjoin
+equals
+integer_constant (2)
+integer_constant (3)
+greater_than
+integer_constant (3)
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+greater_than
+negative
+integer_constant (3)
+integer_constant (-1000000)
+close_set_enumeration
+intersect
+open_set_enumeration
+boolean_constant (false)
+boolean_constant (false)
+boolean_constant (false)
+boolean_constant (false)
+boolean_constant (true)
+boolean_constant (false)
+boolean_constant (false)
+boolean_constant (false)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (true)
+close_set_enumeration
+evaluate
+type_check

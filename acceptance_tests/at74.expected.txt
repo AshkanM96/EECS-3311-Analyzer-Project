@@ -1,0 +1,65 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->disjoin
+  Expression currently specified: ((? || nil) && nil)
+  Report: OK.
+->equals
+  Expression currently specified: (((? = nil) || nil) && nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (((True = ?) || nil) && nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((True = False) || ?) && nil)
+  Report: OK.
+->equals
+  Expression currently specified: (((True = False) || (? = nil)) && nil)
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (((True = False) || (-5 = ?)) && nil)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (((True = False) || (-5 = -3)) && ?)
+  Report: OK.
+->disjoin
+  Expression currently specified: (((True = False) || (-5 = -3)) && (? || nil))
+  Report: OK.
+->equals
+  Expression currently specified: (((True = False) || (-5 = -3)) && ((? = nil) || nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({?} = nil) || nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1, ?} = nil) || nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = ?) || nil))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {?}) || nil))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1, ?}) || nil))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || ?))
+  Report: OK.
+->equals
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || (? = nil)))
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || (5 = ?)))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || (5 = 3)))
+  Report: OK.
+->type_check
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || (5 = 3)))
+  Report: (((True = False) || (-5 = -3)) && (({1} = {1}) || (5 = 3))) is type-correct.
+->evaluate
+  Expression currently specified: (((True = False) || (-5 = -3)) && (({1} = {1}) || (5 = 3)))
+  Report: False

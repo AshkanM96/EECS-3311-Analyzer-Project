@@ -1,0 +1,8 @@
+sum
+open_set_enumeration
+divide
+integer_constant(1)
+integer_constant(0)
+integer_constant(1)
+close_set_enumeration
+evaluate

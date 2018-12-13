@@ -1,0 +1,77 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->imply
+  Expression currently specified: (? => nil)
+  Report: OK.
+->imply
+  Expression currently specified: ((? => nil) => nil)
+  Report: OK.
+->imply
+  Expression currently specified: (((? => nil) => nil) => nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => ?) => nil) => nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => ?) => nil)
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (? => nil)) => nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => ?)) => nil)
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (? => nil))) => nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => ?))) => nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ?)
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => (? => nil))
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((? => nil) => nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => ?) => nil))
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (? => nil)) => nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => ?)) => nil))
+  Report: OK.
+->integer_constant(-5)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ?))
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => (? => nil)))
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((? => nil) => nil)))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => ?) => nil)))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => ?)))
+  Report: OK.
+->imply
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (? => nil))))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (False => ?))))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (False => False))))
+  Report: OK.
+->type_check
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (False => False))))
+  Report: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (False => False)))) is not type-correct.
+->evaluate
+  Expression currently specified: (((False => False) => (False => (False => False))) => ((False => (False => -5)) => ((False => False) => (False => False))))
+  Report: Error (Expression is not type-correct).

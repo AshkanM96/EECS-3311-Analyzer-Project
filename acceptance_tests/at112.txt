@@ -1,0 +1,75 @@
+open_set_enumeration
+difference
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+difference
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+difference
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+difference
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+open_set_enumeration
+divide
+integer_constant (2)
+integer_constant (0)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check

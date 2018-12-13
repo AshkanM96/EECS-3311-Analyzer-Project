@@ -1,0 +1,155 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (2 / ?)
+  Report: OK.
+->count
+  Expression currently specified: (2 / (# ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (2 / (# {?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (2 / (# {False, ?}))
+  Report: OK.
+->less_than
+  Expression currently specified: (2 / (# {False, (? < nil)}))
+  Report: OK.
+->mod
+  Expression currently specified: (2 / (# {False, ((? mod nil) < nil)}))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (2 / (# {False, ((3 mod ?) < nil)}))
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < ?)}))
+  Report: OK.
+->divide
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (? / nil))}))
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / ?))}))
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / 0)), ?}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / 0)), False, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / 0)), False}))
+  Report: OK.
+->evaluate
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / 0)), False}))
+  Report: Error (Divisor is zero and Modulus is not positive).
+->type_check
+  Expression currently specified: (2 / (# {False, ((3 mod 0) < (4 / 0)), False}))
+  Report: (2 / (# {False, ((3 mod 0) < (4 / 0)), False})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->mod
+  Expression currently specified: ((? mod nil) / nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ((3 mod ?) / nil)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: ((3 mod -3) / ?)
+  Report: OK.
+->product
+  Expression currently specified: ((3 mod -3) / (* ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ((3 mod -3) / (* {?}))
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ((3 mod -3) / (* {1, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ((3 mod -3) / (* {1}))
+  Report: OK.
+->evaluate
+  Expression currently specified: ((3 mod -3) / (* {1}))
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ((3 mod -3) / (* {1}))
+  Report: ((3 mod -3) / (* {1})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->mod
+  Expression currently specified: ((? mod nil) / nil)
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: ((-2 mod ?) / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: ((-2 mod 5) / ?)
+  Report: OK.
+->count
+  Expression currently specified: ((-2 mod 5) / (# ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ((-2 mod 5) / (# {?}))
+  Report: OK.
+->exclusive_disjoin
+  Expression currently specified: ((-2 mod 5) / (# {(? xor nil)}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor ?)}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), ?}))
+  Report: OK.
+->exclusive_disjoin
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (? xor nil)}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor ?)}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), ?}))
+  Report: OK.
+->exclusive_disjoin
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (? xor nil)}))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor ?)}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), ?}))
+  Report: OK.
+->exclusive_disjoin
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (? xor nil)}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor ?)}))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True), ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True)}))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True)}))
+  Report: Error (Expression is already fully specified).
+->evaluate
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True)}))
+  Report: 3
+->type_check
+  Expression currently specified: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True)}))
+  Report: ((-2 mod 5) / (# {(False xor False), (True xor False), (False xor True), (True xor True)})) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

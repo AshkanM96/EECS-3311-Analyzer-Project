@@ -1,0 +1,11 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {?}
+  Report: Error: (Set enumeration must be non-empty).
+->type_check
+  Expression currently specified: {?}
+  Report: Error (Expression is not yet fully specified).

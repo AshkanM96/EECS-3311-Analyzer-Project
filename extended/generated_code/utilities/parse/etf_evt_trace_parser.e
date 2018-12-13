@@ -263,7 +263,7 @@ feature -- Context
 			elseif (attached {ETF_PRIMITIVE_PARAM_TYPE} param_type as prim) then
 				Result := value_to_int_or_real_primitive (arg, prim)
 			else
-				check attached {ETF_ARRAY_PARAM} param_type as comp then
+				check (attached {ETF_ARRAY_PARAM} param_type as comp) then
 					Result := value_to_int_or_real_composite (arg, comp)
 				end
 			end
@@ -328,12 +328,15 @@ feature -- Context
 		end
 
 	value_to_int (arg: ETF_EVT_ARG): ETF_EVT_ARG
+		local
+			precise_out: STRING
 		do
 			if (attached {ETF_VALUE_ARG} arg as val_arg) then
-				if val_arg.value.precise_out.is_integer_64 then
-					create {ETF_INT_ARG} Result.make (val_arg.value.precise_out.to_integer_64)
+				precise_out := val_arg.value.precise_out
+				if precise_out.is_integer_64 then
+					create {ETF_INT_ARG} Result.make (precise_out.to_integer_64)
 				else
-					report_error ("Invalid number for 64-bit integer " + val_arg.value.precise_out)
+					report_error ("Invalid number for 64-bit integer " + precise_out)
 					Result := arg
 				end
 			else
@@ -342,12 +345,15 @@ feature -- Context
 		end
 
 	value_to_real (arg: ETF_EVT_ARG): ETF_EVT_ARG
+		local
+			precise_out: STRING
 		do
 			if (attached {ETF_VALUE_ARG} arg as val_arg) then
-				if val_arg.value.precise_out.is_real_64 then
-					create {ETF_REAL_ARG} Result.make (val_arg.value.precise_out.to_real_64)
+				precise_out := val_arg.value.precise_out
+				if precise_out.is_real_64 then
+					create {ETF_REAL_ARG} Result.make (precise_out.to_real_64)
 				else
-					report_error ("Invalid number for double-precision, real value " + val_arg.value.precise_out)
+					report_error ("Invalid number for double-precision, real value " + precise_out)
 					Result := arg
 				end
 			else
@@ -633,7 +639,7 @@ feature {NONE} -- Semantic actions
 					yyssp := yyssp - 1
 					yyvsp1 := yyvsp1 + 1
 					yyvsp5 := yyvsp5 - 1
-					if yyvsp1 >= yyvsc1 then
+					if (yyvsp1 >= yyvsc1) then
 						debug ("GEYACC")
 							std.error.put_line ("Resize yyvs1")
 						end
@@ -667,7 +673,7 @@ feature {NONE} -- Semantic actions
 				end
 				yyval5 := yyvs5.item (yyvsp5)
 				yyval5.force ([yyvs4.item (yyvsp4), yyvs6.item (yyvsp6)], yyval5.upper + 1)
-				if yy_parsing_status >= yyContinue then
+				if (yy_parsing_status >= yyContinue) then
 					yyssp := yyssp - 3
 					yyvsp4 := yyvsp4 - 1
 					yyvsp6 := yyvsp6 - 1
@@ -693,7 +699,7 @@ feature {NONE} -- Semantic actions
 				if (yy_parsing_status >= yyContinue) then
 					yyssp := yyssp - 0
 					yyvsp6 := yyvsp6 + 1
-					if yyvsp6 >= yyvsc6 then
+					if (yyvsp6 >= yyvsc6) then
 						debug ("GEYACC")
 							std.error.put_line ("Resize yyvs6")
 						end
@@ -719,7 +725,7 @@ feature {NONE} -- Semantic actions
 					std.error.put_line ("Executing parser user-code from file 'ETF_evt_trace_parser_def.y' at line 122")
 				end
 				create {ARRAY [ETF_EVT_ARG]} yyval6.make_empty
-				if attached evt_param_types [current_evt] as evt then
+				if (attached evt_param_types [current_evt] as evt) then
 					if (not evt.is_empty) then
 						current_param := evt.first
 						yyval6.force (value_to_int_or_real (yyvs7.item (yyvsp7), current_param), yyval6.upper + 1)
@@ -747,7 +753,7 @@ feature {NONE} -- Semantic actions
 					std.error.put_line ("Executing parser user-code from file 'ETF_evt_trace_parser_def.y' at line 134")
 				end
 				yyval6 := yyvs6.item (yyvsp6)
-				if attached evt_param_types [current_evt] as evt then
+				if (attached evt_param_types [current_evt] as evt) then
 					evt_index := yyvs6.item (yyvsp6).count + 1
 					if (evt_index <= evt.count) then
 						current_param := evt [evt_index]
@@ -792,7 +798,7 @@ feature {NONE} -- Semantic actions
 					yyssp := yyssp - 1
 					yyvsp7 := yyvsp7 + 1
 					yyvsp9 := yyvsp9 - 1
-					if yyvsp7 >= yyvsc7 then
+					if (yyvsp7 >= yyvsc7) then
 						debug ("GEYACC")
 							std.error.put_line ("Resize yyvs7")
 						end
@@ -902,7 +908,7 @@ feature {NONE} -- Semantic actions
 					yyssp := yyssp - 1
 					yyvsp8 := yyvsp8 + 1
 					yyvsp1 := yyvsp1 - 1
-					if yyvsp8 >= yyvsc8 then
+					if (yyvsp8 >= yyvsc8) then
 						debug ("GEYACC")
 							std.error.put_line ("Resize yyvs8")
 						end

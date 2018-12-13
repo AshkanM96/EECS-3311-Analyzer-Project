@@ -1,0 +1,29 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->divide
+  Expression currently specified: ((? / nil) / nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ((1 / ?) / nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ((1 / 2) / ?)
+  Report: OK.
+->divide
+  Expression currently specified: ((1 / 2) / (? / nil))
+  Report: OK.
+->integer_constant(-11)
+  Expression currently specified: ((1 / 2) / (-11 / ?))
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: ((1 / 2) / (-11 / -10))
+  Report: OK.
+->type_check
+  Expression currently specified: ((1 / 2) / (-11 / -10))
+  Report: ((1 / 2) / (-11 / -10)) is type-correct.
+->evaluate
+  Expression currently specified: ((1 / 2) / (-11 / -10))
+  Report: 0

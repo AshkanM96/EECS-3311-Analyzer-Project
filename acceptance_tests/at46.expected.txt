@@ -1,0 +1,194 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{1, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{1, False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{1, False}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{1, False}, {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{1, False}, {True, ?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{1, False}, {True, 2, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{1, False}, {True, 2}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{1, False}, {True, 2}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{1, False}, {True, 2}}
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{True, (? + nil)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{True, (1 + ?)}}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {{True, (1 + 1), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, (1 + 1)}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True, (1 + 1)}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, (1 + 1)}, {False, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, (1 + 1)}, {False, False, ?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, (1 + 1)}, {False, False, True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, (1 + 1)}, {False, False, True}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, (1 + 1)}, {False, False, True}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True, (1 + 1)}, {False, False, True}}
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, ?}}
+  Report: OK.
+->integer_constant(10)
+  Expression currently specified: {{True, 10, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, 10}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{True, 10}, {?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, 10}, {False, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, 10}, {False, False, ?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, 10}, {False, False, True, ?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, 10}, {False, False, True, True, ?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, False, ?}}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, False, False, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, False, False}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, False, False}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{True, 10}, {False, False, True, True, True, False, False}}
+  Report: Error (Expression is not type-correct).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {{2, ?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {{2, True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, True}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {{2, True}, {?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, True}, {?}}
+  Report: Error: (Set enumeration must be non-empty).
+->close_set_enumeration
+  Expression currently specified: {{2, True}, {?}}
+  Report: Error: (Set enumeration must be non-empty).
+->evaluate
+  Expression currently specified: {{2, True}, {?}}
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: {{2, True}, {?}}
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: {{2, True}, {?}}
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(True)
+  Expression currently specified: {{2, True}, {True, ?}}
+  Report: OK.
+->add
+  Expression currently specified: {{2, True}, {True, (? + nil)}}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {{2, True}, {True, (3 + ?)}}
+  Report: OK.
+->integer_constant(9)
+  Expression currently specified: {{2, True}, {True, (3 + 9), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, True}, {True, (3 + 9)}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {{2, True}, {True, (3 + 9)}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {{2, True}, {True, (3 + 9)}}
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: {{2, True}, {True, (3 + 9)}}
+  Report: {{2, True}, {True, (3 + 9)}} is not type-correct.

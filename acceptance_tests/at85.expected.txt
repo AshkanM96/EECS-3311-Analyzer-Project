@@ -1,0 +1,71 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->negative
+  Expression currently specified: ((- ?) = nil)
+  Report: OK.
+->multiply
+  Expression currently specified: ((- (? * nil)) = nil)
+  Report: OK.
+->integer_constant(-4)
+  Expression currently specified: ((- (-4 * ?)) = nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ((- (-4 * 3)) = ?)
+  Report: OK.
+->subtract
+  Expression currently specified: ((- (-4 * 3)) = (? - nil))
+  Report: OK.
+->integer_constant(10)
+  Expression currently specified: ((- (-4 * 3)) = (10 - ?))
+  Report: OK.
+->negative
+  Expression currently specified: ((- (-4 * 3)) = (10 - (- ?)))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ((- (-4 * 3)) = (10 - (- 2)))
+  Report: OK.
+->type_check
+  Expression currently specified: ((- (-4 * 3)) = (10 - (- 2)))
+  Report: ((- (-4 * 3)) = (10 - (- 2))) is type-correct.
+->evaluate
+  Expression currently specified: ((- (-4 * 3)) = (10 - (- 2)))
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->equals
+  Expression currently specified: (? = nil)
+  Report: OK.
+->negation
+  Expression currently specified: ((! ?) = nil)
+  Report: OK.
+->conjoin
+  Expression currently specified: ((! (? && nil)) = nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ((! (True && ?)) = nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((! (True && False)) = ?)
+  Report: OK.
+->disjoin
+  Expression currently specified: ((! (True && False)) = (? || nil))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((! (True && False)) = (False || ?))
+  Report: OK.
+->negation
+  Expression currently specified: ((! (True && False)) = (False || (! ?)))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ((! (True && False)) = (False || (! False)))
+  Report: OK.
+->type_check
+  Expression currently specified: ((! (True && False)) = (False || (! False)))
+  Report: ((! (True && False)) = (False || (! False))) is type-correct.
+->evaluate
+  Expression currently specified: ((! (True && False)) = (False || (! False)))
+  Report: True

@@ -1,0 +1,29 @@
+intersect
+difference
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (2)
+integer_constant (3)
+integer_constant (4)
+close_set_enumeration
+evaluate
+type_check
+reset
+intersect
+difference
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (true)
+close_set_enumeration
+evaluate
+type_check

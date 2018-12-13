@@ -1,0 +1,32 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->multiply
+  Expression currently specified: (? * nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 * ?)
+  Report: OK.
+->sum
+  Expression currently specified: (5 * (+ ?))
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (5 * (+ {?}))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (5 * (+ {2, ?}))
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (5 * (+ {2, 2, ?}))
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: (5 * (+ {2, 2, 3, ?}))
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (5 * (+ {2, 2, 3}))
+  Report: OK.
+->type_check
+  Expression currently specified: (5 * (+ {2, 2, 3}))
+  Report: (5 * (+ {2, 2, 3})) is type-correct.
+->evaluate
+  Expression currently specified: (5 * (+ {2, 2, 3}))
+  Report: 25

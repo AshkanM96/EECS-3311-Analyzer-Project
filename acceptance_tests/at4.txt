@@ -1,0 +1,11 @@
+for_all
+open_set_enumeration 
+conjoin
+boolean_constant (true)
+boolean_constant (false)
+disjoin
+boolean_constant (true)
+boolean_constant (false)
+close_set_enumeration
+type_check
+evaluate 

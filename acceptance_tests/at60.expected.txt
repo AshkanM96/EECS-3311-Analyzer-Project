@@ -1,0 +1,35 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(10)
+  Expression currently specified: (10 / ?)
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: (10 / -10)
+  Report: OK.
+->type_check
+  Expression currently specified: (10 / -10)
+  Report: (10 / -10) is type-correct.
+->evaluate
+  Expression currently specified: (10 / -10)
+  Report: -1
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(10)
+  Expression currently specified: (10 / ?)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (10 / -3)
+  Report: OK.
+->type_check
+  Expression currently specified: (10 / -3)
+  Report: (10 / -3) is type-correct.
+->evaluate
+  Expression currently specified: (10 / -3)
+  Report: -3

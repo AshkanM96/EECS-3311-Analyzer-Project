@@ -1,0 +1,41 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->disjoin
+  Expression currently specified: (? || nil)
+  Report: OK.
+->disjoin
+  Expression currently specified: ((? || nil) || nil)
+  Report: OK.
+->disjoin
+  Expression currently specified: (((? || nil) || nil) || nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (((True || ?) || nil) || nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((True || False) || ?) || nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (((True || False) || True) || ?)
+  Report: OK.
+->disjoin
+  Expression currently specified: (((True || False) || True) || (? || nil))
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (((True || False) || True) || (True || ?))
+  Report: OK.
+->disjoin
+  Expression currently specified: (((True || False) || True) || (True || (? || nil)))
+  Report: OK.
+->integer_constant(-2)
+  Expression currently specified: (((True || False) || True) || (True || (-2 || ?)))
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (((True || False) || True) || (True || (-2 || False)))
+  Report: OK.
+->type_check
+  Expression currently specified: (((True || False) || True) || (True || (-2 || False)))
+  Report: (((True || False) || True) || (True || (-2 || False))) is not type-correct.
+->evaluate
+  Expression currently specified: (((True || False) || True) || (True || (-2 || False)))
+  Report: Error (Expression is not type-correct).

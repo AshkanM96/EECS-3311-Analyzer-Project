@@ -1,0 +1,80 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->type_check
+  Expression currently specified: (|| ?)
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (|| ?)
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| {?})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {False, ?})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {False, False, ?})
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| {False, False, ?})
+  Report: Error (Expression is not yet fully specified).
+->type_check
+  Expression currently specified: (|| {False, False, ?})
+  Report: Error (Expression is not yet fully specified).
+->boolean_constant(True)
+  Expression currently specified: (|| {False, False, True, ?})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {False, False, True, False, ?})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {False, False, True, False, False, ?})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {False, False, True, False, False, False, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| {False, False, True, False, False, False})
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| {False, False, True, False, False, False})
+  Report: True
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->there_exists
+  Expression currently specified: (|| ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| {?})
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: (|| {{?}})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (|| {{False, ?}})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| {{False}, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: (|| {{False}})
+  Report: OK.
+->evaluate
+  Expression currently specified: (|| {{False}})
+  Report: Error (Expression is not type-correct).
+->type_check
+  Expression currently specified: (|| {{False}})
+  Report: (|| {{False}}) is not type-correct.

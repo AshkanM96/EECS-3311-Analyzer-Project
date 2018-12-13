@@ -1,0 +1,10 @@
+for_all
+close_set_enumeration 
+boolean_constant(true)
+type_check
+evaluate 
+reset
+open_set_enumeration 
+close_set_enumeration
+type_check
+evaluate 

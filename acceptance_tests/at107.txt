@@ -1,0 +1,67 @@
+open_set_enumeration
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+boolean_constant (False)
+close_set_enumeration
+difference
+open_set_enumeration
+boolean_constant (False)
+close_set_enumeration
+open_set_enumeration
+equals
+integer_constant (2)
+integer_constant (3)
+close_set_enumeration
+open_set_enumeration
+less_than
+integer_constant (3)
+integer_constant (5)
+greater_than
+integer_constant (5)
+integer_constant (3)
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset
+open_set_enumeration
+open_set_enumeration
+boolean_constant (false)
+close_set_enumeration
+open_set_enumeration
+equals
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+open_set_enumeration
+integer_constant (3)
+close_set_enumeration
+close_set_enumeration
+difference
+open_set_enumeration
+boolean_constant (True)
+close_set_enumeration
+open_set_enumeration
+equals
+integer_constant (2)
+sum
+open_set_enumeration
+integer_constant (2)
+add
+integer_constant (1)
+integer_constant (1)
+divide
+integer_constant (1000)
+integer_constant (500)
+multiply
+negative
+integer_constant (1)
+integer_constant (-2)
+close_set_enumeration
+close_set_enumeration
+close_set_enumeration
+evaluate
+type_check
+reset

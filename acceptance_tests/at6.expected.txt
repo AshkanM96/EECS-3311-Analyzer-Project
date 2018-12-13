@@ -1,0 +1,44 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->multiply
+  Expression currently specified: ((? * nil) + nil)
+  Report: OK.
+->divide
+  Expression currently specified: (((? / nil) * nil) + nil)
+  Report: OK.
+->divide
+  Expression currently specified: ((((? / nil) / nil) * nil) + nil)
+  Report: OK.
+->divide
+  Expression currently specified: (((((? / nil) / nil) / nil) * nil) + nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (((((2 / ?) / nil) / nil) * nil) + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (((((2 / 0) / ?) / nil) * nil) + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (((((2 / 0) / 0) / ?) * nil) + nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: (((((2 / 0) / 0) / 0) * ?) + nil)
+  Report: OK.
+->integer_constant(-3)
+  Expression currently specified: (((((2 / 0) / 0) / 0) * -3) + ?)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (((((2 / 0) / 0) / 0) * -3) + 5)
+  Report: OK.
+->type_check
+  Expression currently specified: (((((2 / 0) / 0) / 0) * -3) + 5)
+  Report: (((((2 / 0) / 0) / 0) * -3) + 5) is type-correct.
+->evaluate
+  Expression currently specified: (((((2 / 0) / 0) / 0) * -3) + 5)
+  Report: Error (Divisor is zero).
+->reset
+  Expression currently specified: ?
+  Report: OK.

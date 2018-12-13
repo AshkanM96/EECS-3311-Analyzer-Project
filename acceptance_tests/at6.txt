@@ -1,0 +1,14 @@
+add
+multiply
+divide
+divide
+divide
+integer_constant (2)
+integer_constant (0)
+integer_constant (0)
+integer_constant (0)
+integer_constant (-3)
+integer_constant (5)
+type_check
+evaluate
+reset

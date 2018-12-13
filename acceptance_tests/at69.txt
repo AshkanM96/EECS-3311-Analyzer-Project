@@ -1,0 +1,13 @@
+disjoin
+disjoin
+disjoin
+boolean_constant(true)
+boolean_constant(false)
+boolean_constant(true)
+disjoin
+boolean_constant(true)
+disjoin
+integer_constant(-2)
+boolean_constant(false)
+type_check
+evaluate

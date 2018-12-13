@@ -46,6 +46,7 @@ feature -- Constructor
 			left := cea.null_cur
 			right := cea.null_nil
 		ensure then
+			new: is_new
 			correct_left: left = cea.null_cur
 			correct_right: right = cea.null_nil
 		end
@@ -65,6 +66,13 @@ feature -- Type Queries
 	frozen is_binary_op: BOOLEAN = True
 
 feature -- State Queries
+
+	frozen is_new: BOOLEAN
+		do
+			Result := (left = cea.null_cur) and then (right = cea.null_nil)
+		ensure then
+			correct_result: Result = (left = cea.null_cur) and then (right = cea.null_nil)
+		end
 
 	frozen is_open: BOOLEAN
 		do
@@ -151,10 +159,10 @@ feature -- Duplication
 			Result.set_left (left.deep_dual)
 			Result.set_right (right.deep_dual)
 		ensure then
-			result_left_not_same_as_current_left: Result.left /= left
 			result_left_equal_to_current_left: Result.left ~ left
-			result_right_not_same_as_current_right: Result.right /= right
+			result_left_diff_from_current_left: same_obj_diff_ptr (left, Result.left)
 			result_right_equal_to_current_right: Result.right ~ right
+			result_right_diff_from_current_right: same_obj_diff_ptr (right, Result.right)
 		end
 
 invariant

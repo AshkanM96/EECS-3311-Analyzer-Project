@@ -1,0 +1,126 @@
+divide
+integer_constant (5)
+integer_constant (7)
+evaluate
+type_check
+reset
+divide
+integer_constant (5)
+integer_constant (5)
+evaluate
+type_check
+reset
+divide
+integer_constant (5)
+integer_constant (3)
+evaluate
+type_check
+reset
+divide
+integer_constant (5)
+integer_constant (-7)
+evaluate
+type_check
+reset
+divide
+integer_constant (5)
+integer_constant (-5)
+evaluate
+type_check
+reset
+divide
+integer_constant (5)
+integer_constant (-3)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (7)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (5)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (3)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (-7)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (-5)
+evaluate
+type_check
+reset
+divide
+integer_constant (-5)
+integer_constant (-3)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (7)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (5)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (3)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (-7)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (-5)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (-3)
+evaluate
+type_check
+reset
+divide
+integer_constant (7)
+integer_constant (0)
+evaluate
+type_check
+reset
+divide
+integer_constant (0)
+integer_constant (0)
+evaluate
+type_check
+reset
+divide
+integer_constant (-7)
+integer_constant (0)
+evaluate
+type_check
+reset

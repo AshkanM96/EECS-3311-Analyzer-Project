@@ -1,0 +1,9 @@
+subtract
+subtract
+integer_constant(1)
+boolean_constant(true)
+subtract
+integer_constant(-5)
+integer_constant(-10)
+type_check
+evaluate

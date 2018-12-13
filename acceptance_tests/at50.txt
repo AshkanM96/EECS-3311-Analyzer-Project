@@ -1,0 +1,15 @@
+disjoin
+equals
+sum
+open_set_enumeration
+integer_constant (2)
+integer_constant (3)
+integer_constant (-5)
+integer_constant (0)
+close_set_enumeration
+negative
+integer_constant (-0)
+boolean_constant (false)
+evaluate
+type_check
+evaluate

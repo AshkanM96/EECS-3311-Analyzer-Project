@@ -18,6 +18,7 @@ feature -- Reset
 	reset
 		deferred
 		ensure
+			new: is_new
 			open: is_open
 		end
 
@@ -51,12 +52,19 @@ feature -- Output
 
 	frozen valid_operator_char (c: CHARACTER_8): BOOLEAN
 		do
-			if (c.is_alpha and then c.is_lower) then
-				Result := True
-			elseif (special_operator_chars.has (c)) then
+			Result := (special_operator_chars.has (c) or else (c.is_alpha and then c.is_lower))
+		end
+
+feature {VARIABLE_EXPRESSION} -- Duplication Helper Query
+
+	same_obj_diff_ptr (e, e_deep_dual: EXPRESSION): BOOLEAN
+		require
+			equal_obj: e ~ e_deep_dual
+		do
+			if e.is_const then
 				Result := True
 			else
-				Result := False
+				Result := (e /= e_deep_dual)
 			end
 		end
 

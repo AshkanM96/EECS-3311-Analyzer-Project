@@ -1,0 +1,534 @@
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+close_set_enumeration
+add
+add
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+close_set_enumeration
+add
+add
+add
+add
+add
+evaluate
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+close_set_enumeration
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+close_set_enumeration
+add
+evaluate
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+evaluate
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+add
+add
+evaluate
+add
+add
+add
+add
+add
+evaluate
+add
+add
+close_set_enumeration
+add
+add
+add
+add
+add
+add
+add
+add
+add
+add
+integer_constant (1)
+integer_constant (2)
+integer_constant (3)
+type_check
+integer_constant (4)
+integer_constant (5)
+integer_constant (6)
+integer_constant (7)
+integer_constant (8)
+integer_constant (9)
+integer_constant (10)
+integer_constant (11)
+integer_constant (12)
+integer_constant (13)
+integer_constant (14)
+integer_constant (15)
+integer_constant (16)
+integer_constant (17)
+integer_constant (18)
+integer_constant (19)
+integer_constant (20)
+integer_constant (21)
+integer_constant (22)
+integer_constant (23)
+integer_constant (24)
+integer_constant (25)
+integer_constant (26)
+integer_constant (27)
+integer_constant (28)
+integer_constant (29)
+integer_constant (30)
+integer_constant (31)
+integer_constant (32)
+integer_constant (33)
+integer_constant (34)
+integer_constant (35)
+integer_constant (36)
+integer_constant (37)
+integer_constant (38)
+integer_constant (39)
+integer_constant (40)
+integer_constant (41)
+integer_constant (42)
+integer_constant (43)
+integer_constant (44)
+integer_constant (45)
+integer_constant (46)
+integer_constant (47)
+integer_constant (48)
+integer_constant (49)
+integer_constant (50)
+integer_constant (51)
+integer_constant (52)
+integer_constant (53)
+integer_constant (54)
+type_check
+integer_constant (55)
+integer_constant (56)
+integer_constant (57)
+integer_constant (58)
+integer_constant (59)
+integer_constant (60)
+type_check
+integer_constant (61)
+integer_constant (62)
+integer_constant (63)
+integer_constant (64)
+integer_constant (65)
+type_check
+integer_constant (66)
+integer_constant (67)
+integer_constant (68)
+integer_constant (69)
+integer_constant (70)
+type_check
+integer_constant (71)
+integer_constant (72)
+integer_constant (73)
+integer_constant (74)
+integer_constant (75)
+integer_constant (76)
+type_check
+integer_constant (77)
+integer_constant (78)
+integer_constant (79)
+integer_constant (80)
+type_check
+integer_constant (81)
+type_check
+integer_constant (82)
+integer_constant (83)
+integer_constant (84)
+integer_constant (85)
+integer_constant (86)
+integer_constant (87)
+integer_constant (88)
+integer_constant (89)
+integer_constant (90)
+integer_constant (91)
+integer_constant (92)
+integer_constant (93)
+integer_constant (94)
+integer_constant (95)
+integer_constant (96)
+integer_constant (97)
+integer_constant (98)
+integer_constant (99)
+integer_constant (100)
+integer_constant (101)
+integer_constant (102)
+integer_constant (103)
+integer_constant (104)
+type_check
+integer_constant (105)
+integer_constant (106)
+integer_constant (107)
+integer_constant (108)
+integer_constant (109)
+integer_constant (110)
+integer_constant (111)
+integer_constant (112)
+integer_constant (113)
+type_check
+integer_constant (114)
+integer_constant (115)
+type_check
+integer_constant (116)
+close_set_enumeration
+integer_constant (117)
+integer_constant (118)
+integer_constant (119)
+integer_constant (120)
+integer_constant (121)
+integer_constant (122)
+integer_constant (123)
+close_set_enumeration
+integer_constant (124)
+integer_constant (125)
+integer_constant (126)
+integer_constant (127)
+type_check
+integer_constant (128)
+integer_constant (129)
+integer_constant (130)
+integer_constant (131)
+integer_constant (132)
+integer_constant (133)
+integer_constant (134)
+type_check
+integer_constant (135)
+integer_constant (136)
+integer_constant (137)
+integer_constant (138)
+integer_constant (139)
+integer_constant (140)
+integer_constant (141)
+integer_constant (142)
+integer_constant (143)
+integer_constant (144)
+integer_constant (145)
+type_check
+integer_constant (146)
+integer_constant (147)
+integer_constant (148)
+integer_constant (149)
+integer_constant (150)
+integer_constant (151)
+integer_constant (152)
+integer_constant (153)
+type_check
+integer_constant (154)
+integer_constant (155)
+integer_constant (156)
+integer_constant (157)
+close_set_enumeration
+integer_constant (158)
+close_set_enumeration
+integer_constant (159)
+integer_constant (160)
+integer_constant (161)
+integer_constant (162)
+integer_constant (163)
+integer_constant (164)
+integer_constant (165)
+type_check
+integer_constant (166)
+integer_constant (167)
+integer_constant (168)
+integer_constant (169)
+integer_constant (170)
+integer_constant (171)
+integer_constant (172)
+integer_constant (173)
+close_set_enumeration
+integer_constant (174)
+integer_constant (175)
+integer_constant (176)
+integer_constant (177)
+integer_constant (178)
+type_check
+integer_constant (179)
+integer_constant (180)
+integer_constant (181)
+integer_constant (182)
+integer_constant (183)
+integer_constant (184)
+integer_constant (185)
+integer_constant (186)
+integer_constant (187)
+integer_constant (188)
+integer_constant (189)
+integer_constant (190)
+type_check
+integer_constant (191)
+integer_constant (192)
+integer_constant (193)
+integer_constant (194)
+type_check
+integer_constant (195)
+integer_constant (196)
+integer_constant (197)
+integer_constant (198)
+integer_constant (199)
+integer_constant (200)
+integer_constant (201)
+boolean_constant (False)
+intersect
+integer_constant (73)
+negation
+difference
+boolean_constant (False)
+subtract
+close_set_enumeration
+conjoin
+integer_constant (37)
+equals
+multiply
+open_set_enumeration
+boolean_constant (True)
+divide
+negative
+imply
+integer_constant (79)
+union
+greater_than
+boolean_constant (True)
+there_exists
+integer_constant (38)
+sum
+disjoin
+boolean_constant (False)
+add
+less_than
+for_all
+integer_constant (19)
+boolean_constant (True)
+intersect
+integer_constant (50)
+negation
+difference
+boolean_constant (True)
+subtract
+close_set_enumeration
+conjoin
+integer_constant (75)
+equals
+multiply
+open_set_enumeration
+boolean_constant (False)
+divide
+negative
+imply
+integer_constant (93)
+union
+greater_than
+boolean_constant (False)
+there_exists
+integer_constant (24)
+sum
+disjoin
+boolean_constant (False)
+add
+less_than
+for_all
+integer_constant (59)
+type_check
+evaluate
+evaluate
+evaluate
+type_check
+evaluate
+evaluate
+evaluate
+evaluate
+evaluate
+type_check
+type_check
+type_check
+type_check
+evaluate
+type_check
+evaluate
+type_check
+type_check
+type_check

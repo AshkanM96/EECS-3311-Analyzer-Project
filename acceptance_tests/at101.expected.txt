@@ -1,0 +1,176 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->difference
+  Expression currently specified: {(? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({?} \ nil)}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {({2, ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({2} \ {?})}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {({2} \ {2, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ {2}), ?}
+  Report: OK.
+->difference
+  Expression currently specified: {({2} \ {2}), (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({?} \ nil)}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({2} \ {2}), ({False, ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ {?})}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({2} \ {2}), ({False} \ {False, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {?}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {True, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {True}, ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {True}}
+  Report: OK.
+->evaluate
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {True}}
+  Report: {{}, {True}}
+->type_check
+  Expression currently specified: {({2} \ {2}), ({False} \ {False}), {True}}
+  Report: {({2} \ {2}), ({False} \ {False}), {True}} is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {?}
+  Report: OK.
+->difference
+  Expression currently specified: {(? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({?} \ nil)}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({False, ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {?})}
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: {({False} \ {False, ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {?}}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {({False} \ {False}), {2, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {?}}
+  Report: OK.
+->sum
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ?)}}
+  Report: OK.
+->difference
+  Expression currently specified: {({False} \ {False}), {2}, {(+ (? \ nil))}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({?} \ nil))}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True, ?} \ nil))}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ ?))}}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {?}))}}
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True, ?}))}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True})), ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, ?}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {?}}
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0, ?}}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ?}
+  Report: OK.
+->difference
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, (? \ nil)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({?} \ nil)}
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3, ?} \ nil)}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ ?)}
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {?})}
+  Report: OK.
+->add
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(? + nil)})}
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + ?)})}
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2), ?})}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2)}), ?}
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2)})}
+  Report: OK.
+->evaluate
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2)})}
+  Report: {{}, {2}, {0}}
+->type_check
+  Expression currently specified: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2)})}
+  Report: {({False} \ {False}), {2}, {(+ ({True} \ {True}))}, {0}, ({3} \ {(1 + 2)})} is type-correct.

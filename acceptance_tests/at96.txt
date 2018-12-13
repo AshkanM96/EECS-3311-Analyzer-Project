@@ -1,0 +1,16 @@
+sum
+open_set_enumeration
+multiply
+integer_constant(2)
+add
+integer_constant(3)
+integer_constant(4)
+multiply
+negative
+integer_constant(-5)
+subtract
+integer_constant(4)
+integer_constant(8)
+close_set_enumeration
+type_check
+evaluate

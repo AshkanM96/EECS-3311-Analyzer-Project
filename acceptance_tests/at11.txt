@@ -1,0 +1,9 @@
+open_set_enumeration
+open_set_enumeration
+integer_constant (2)
+close_set_enumeration
+divide
+integer_constant (4)
+integer_constant (3)
+close_set_enumeration
+type_check

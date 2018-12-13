@@ -1,0 +1,14 @@
+conjoin
+sum
+reset
+conjoin
+equals
+sum
+open_set_enumeration
+integer_constant(1)
+integer_constant(3)
+close_set_enumeration
+integer_constant(4)
+boolean_constant(true)
+type_check
+evaluate

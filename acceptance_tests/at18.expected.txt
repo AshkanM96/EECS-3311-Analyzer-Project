@@ -1,0 +1,41 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: (True && ?)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (True && False)
+  Report: OK.
+->type_check
+  Expression currently specified: (True && False)
+  Report: (True && False) is type-correct.
+->evaluate
+  Expression currently specified: (True && False)
+  Report: False
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False && ?)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: (False && False)
+  Report: OK.
+->evaluate
+  Expression currently specified: (False && False)
+  Report: False
+->type_check
+  Expression currently specified: (False && False)
+  Report: (False && False) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->conjoin
+  Expression currently specified: (? && nil)
+  Report: OK.

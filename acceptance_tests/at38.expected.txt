@@ -1,0 +1,62 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 + ?)
+  Report: OK.
+->negative
+  Expression currently specified: (5 + (- ?))
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 + (- 5))
+  Report: OK.
+->type_check
+  Expression currently specified: (5 + (- 5))
+  Report: (5 + (- 5)) is type-correct.
+->evaluate
+  Expression currently specified: (5 + (- 5))
+  Report: 0
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 + ?)
+  Report: OK.
+->negative
+  Expression currently specified: (5 + (- ?))
+  Report: OK.
+->integer_constant(50000000000000)
+  Expression currently specified: (5 + (- 50000000000000))
+  Report: OK.
+->type_check
+  Expression currently specified: (5 + (- 50000000000000))
+  Report: (5 + (- 50000000000000)) is type-correct.
+->evaluate
+  Expression currently specified: (5 + (- 50000000000000))
+  Report: -49999999999995
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->subtract
+  Expression currently specified: (? - nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 - ?)
+  Report: OK.
+->negative
+  Expression currently specified: (5 - (- ?))
+  Report: OK.
+->integer_constant(50000000000000)
+  Expression currently specified: (5 - (- 50000000000000))
+  Report: OK.
+->type_check
+  Expression currently specified: (5 - (- 50000000000000))
+  Report: (5 - (- 50000000000000)) is type-correct.
+->evaluate
+  Expression currently specified: (5 - (- 50000000000000))
+  Report: 50000000000005

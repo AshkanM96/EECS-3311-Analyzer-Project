@@ -551,10 +551,10 @@ feature -- Man Page
 			union
 			intersect
 			difference
-			subset_equal
-			subset_proper
-			superset_equal
-			superset_proper
+			subset_equal, subeq
+			subset_proper, subneq
+			superset_equal, supeq
+			superset_proper, supneq
 			negative
 			negation, not
 			sum

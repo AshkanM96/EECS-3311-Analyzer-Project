@@ -1,0 +1,53 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->negative
+  Expression currently specified: (- ?)
+  Report: OK.
+->integer_constant(-9223372036854775808)
+  Expression currently specified: (- -9223372036854775808)
+  Report: OK.
+->evaluate
+  Expression currently specified: (- -9223372036854775808)
+  Report: -9223372036854775808
+->type_check
+  Expression currently specified: (- -9223372036854775808)
+  Report: (- -9223372036854775808) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->integer_constant(9223372036854775807)
+  Expression currently specified: (9223372036854775807 + ?)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (9223372036854775807 + 2)
+  Report: OK.
+->evaluate
+  Expression currently specified: (9223372036854775807 + 2)
+  Report: -9223372036854775807
+->type_check
+  Expression currently specified: (9223372036854775807 + 2)
+  Report: (9223372036854775807 + 2) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (2 + ?)
+  Report: OK.
+->integer_constant(9223372036854775807)
+  Expression currently specified: (2 + 9223372036854775807)
+  Report: OK.
+->evaluate
+  Expression currently specified: (2 + 9223372036854775807)
+  Report: -9223372036854775807
+->type_check
+  Expression currently specified: (2 + 9223372036854775807)
+  Report: (2 + 9223372036854775807) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

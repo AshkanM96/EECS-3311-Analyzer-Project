@@ -1,0 +1,5 @@
+add
+integer_constant(-10)
+integer_constant(10)
+type_check
+evaluate

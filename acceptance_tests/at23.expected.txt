@@ -1,0 +1,32 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->intersect
+  Expression currently specified: (? /\ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} /\ nil)
+  Report: OK.
+->boolean_constant(True)
+  Expression currently specified: ({True, ?} /\ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({True} /\ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({True} /\ {?})
+  Report: OK.
+->negation
+  Expression currently specified: ({True} /\ {(! ?)})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({True} /\ {(! False), ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({True} /\ {(! False)})
+  Report: OK.
+->type_check
+  Expression currently specified: ({True} /\ {(! False)})
+  Report: ({True} /\ {(! False)}) is type-correct.
+->evaluate
+  Expression currently specified: ({True} /\ {(! False)})
+  Report: {True}

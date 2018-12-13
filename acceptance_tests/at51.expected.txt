@@ -1,0 +1,17 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->add
+  Expression currently specified: (? + nil)
+  Report: OK.
+->integer_constant(-10)
+  Expression currently specified: (-10 + ?)
+  Report: OK.
+->integer_constant(10)
+  Expression currently specified: (-10 + 10)
+  Report: OK.
+->type_check
+  Expression currently specified: (-10 + 10)
+  Report: (-10 + 10) is type-correct.
+->evaluate
+  Expression currently specified: (-10 + 10)
+  Report: 0

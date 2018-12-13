@@ -1,0 +1,602 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->intersect
+  Expression currently specified: (? /\ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} /\ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} /\ nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} /\ nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} /\ nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} /\ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} /\ nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} /\ nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} /\ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} /\ nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} /\ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} /\ nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} /\ nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} /\ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} /\ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} /\ nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} /\ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} /\ {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->union
+  Expression currently specified: (? \/ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} \/ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} \/ nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} \/ nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} \/ nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} \/ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} \/ nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} \/ nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} \/ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} \/ nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} \/ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} \/ nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} \/ nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} \/ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} \/ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} \/ nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} \/ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \/ {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->difference
+  Expression currently specified: (? \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} \ nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} \ nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} \ nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} \ nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} \ nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} \ nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} \ nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} \ nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} \ nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} \ {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->difference
+  Expression currently specified: (? \ nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} \ nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({1, ?} \ nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3, ?} \ nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} \ ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({1, 3} \ {?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} \ {3, ?})
+  Report: OK.
+->divide
+  Expression currently specified: ({1, 3} \ {3, (? / nil)})
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({1, 3} \ {3, (2 / ?)})
+  Report: OK.
+->count
+  Expression currently specified: ({1, 3} \ {3, (2 / (# ?))})
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {?}))})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ?}))})
+  Report: OK.
+->less_than
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, (? < nil)}))})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, (? < nil)}))})
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((? mod nil) < nil)}))})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod ?) < nil)}))})
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < ?)}))})
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909), ?}))})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?})
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: ({1, 3} \ {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->subset_equal
+  Expression currently specified: (? <= nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} <= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} <= nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} <= nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} <= nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} <= nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} <= nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} <= nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} <= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} <= nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} <= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} <= nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} <= nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} <= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} <= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} <= nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} <= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} <= {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->subset_proper
+  Expression currently specified: (? < nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} < nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} < nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} < nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} < nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} < nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} < nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} < nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} < nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} < nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} < nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} < nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} < nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} < nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} < nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} < nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} < nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} < {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->superset_equal
+  Expression currently specified: (? >= nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} >= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, ?} >= nil)
+  Report: OK.
+->divide
+  Expression currently specified: ({3, (? / nil)} >= nil)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({3, (2 / ?)} >= nil)
+  Report: OK.
+->count
+  Expression currently specified: ({3, (2 / (# ?))} >= nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {?}))} >= nil)
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({3, (2 / (# {False, ?}))} >= nil)
+  Report: OK.
+->less_than
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} >= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, (? < nil)}))} >= nil)
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({3, (2 / (# {False, ((? mod nil) < nil)}))} >= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod ?) < nil)}))} >= nil)
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < ?)}))} >= nil)
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909), ?}))} >= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), ?} >= nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?} >= nil)
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?} >= nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {?})
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, 3, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, 3})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, 3})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, 3})
+  Report: ({3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4} >= {1, 3}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->superset_proper
+  Expression currently specified: (? > nil)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({?} > nil)
+  Report: OK.
+->integer_constant(1)
+  Expression currently specified: ({1, ?} > nil)
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3, ?} > nil)
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} > ?)
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({1, 3} > {?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} > {3, ?})
+  Report: OK.
+->divide
+  Expression currently specified: ({1, 3} > {3, (? / nil)})
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: ({1, 3} > {3, (2 / ?)})
+  Report: OK.
+->count
+  Expression currently specified: ({1, 3} > {3, (2 / (# ?))})
+  Report: OK.
+->open_set_enumeration
+  Expression currently specified: ({1, 3} > {3, (2 / (# {?}))})
+  Report: OK.
+->boolean_constant(False)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ?}))})
+  Report: OK.
+->less_than
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, (? < nil)}))})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, (? < nil)}))})
+  Report: Error (Set enumeration is not being specified).
+->mod
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((? mod nil) < nil)}))})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod ?) < nil)}))})
+  Report: OK.
+->integer_constant(0)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < ?)}))})
+  Report: OK.
+->integer_constant(909)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909), ?}))})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), ?})
+  Report: OK.
+->integer_constant(3)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, ?})
+  Report: OK.
+->integer_constant(4)
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4, ?})
+  Report: OK.
+->close_set_enumeration
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: OK.
+->evaluate
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: Error (Modulus is not positive).
+->type_check
+  Expression currently specified: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4})
+  Report: ({1, 3} > {3, (2 / (# {False, ((3 mod 0) < 909)})), 3, 4}) is type-correct.
+->reset
+  Expression currently specified: ?
+  Report: OK.

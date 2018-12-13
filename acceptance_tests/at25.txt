@@ -1,0 +1,13 @@
+add
+type_check
+reset
+reset
+type_check
+add
+boolean_constant(false)
+type_check
+evaluate
+integer_constant(1)
+type_check
+evaluate
+reset

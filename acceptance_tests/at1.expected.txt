@@ -1,0 +1,32 @@
+  Expression currently specified: ?
+  Report: Expression is initialized.
+->reset
+  Expression currently specified: ?
+  Report: Error (Initial expression cannot be reset).
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->type_check
+  Expression currently specified: (? / nil)
+  Report: Error (Expression is not yet fully specified).
+->evaluate
+  Expression currently specified: (? / nil)
+  Report: Error (Expression is not yet fully specified).
+->reset
+  Expression currently specified: ?
+  Report: OK.
+->divide
+  Expression currently specified: (? / nil)
+  Report: OK.
+->integer_constant(5)
+  Expression currently specified: (5 / ?)
+  Report: OK.
+->integer_constant(2)
+  Expression currently specified: (5 / 2)
+  Report: OK.
+->type_check
+  Expression currently specified: (5 / 2)
+  Report: (5 / 2) is type-correct.
+->evaluate
+  Expression currently specified: (5 / 2)
+  Report: 2
