@@ -90,7 +90,7 @@ feature -- Constructor
 		rescue
 			if is_signal and then (attached meaning (exception) as s) then
 				print ("%N" + s + "%NQuit...%N")
-				operating_signal := true
+				operating_signal := True
 				retry
 			end
 		end
@@ -107,7 +107,8 @@ feature -- Test(s)
 				-- add_test (create {MY_TEST}.make)
 		end
 
-		-- invariant
-		-- 	valid_switch: (switch = unit_test) or else (switch = etf_gui_show_history) or else (switch = etf_gui_hide_history) or else (switch = etf_cl_show_history) or else (switch = etf_cl_hide_history)
+invariant
+	different_switch_constants: (unit_test /= etf_gui_show_history) and then (unit_test /= etf_gui_hide_history) and then (unit_test /= etf_cl_show_history) and then (unit_test /= etf_cl_hide_history) and then (etf_gui_show_history /= etf_gui_hide_history) and then (etf_gui_show_history /= etf_cl_show_history) and then (etf_gui_show_history /= etf_cl_hide_history) and then (etf_gui_hide_history /= etf_cl_show_history) and then (etf_gui_hide_history /= etf_cl_hide_history) and then (etf_cl_show_history /= etf_cl_hide_history)
+	correct_switch: (switch = unit_test) or else (switch = etf_gui_show_history) or else (switch = etf_gui_hide_history) or else (switch = etf_cl_show_history) or else (switch = etf_cl_hide_history)
 
 end
